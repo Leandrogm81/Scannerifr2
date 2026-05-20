@@ -1,8 +1,6 @@
 """Aplicativo Streamlit para screening e backtesting de ações (IFR2 Miner & Screener)."""
 
 import streamlit as st
-st.write("DEBUG: ifr2_app top reached")
-raise Exception("DEBUG CRASH TEST")
 import time
 
 # Bootstrap leve para renderizar a UI antes de carregar pandas/yfinance.
@@ -12,7 +10,6 @@ from src.app_bootstrap import (
     DEFAULT_RSI_THRESHOLD,
     load_universe,
 )
-st.write("DEBUG: app_bootstrap import passed")
 
 # Configuração da página para estética premium
 st.set_page_config(
@@ -21,7 +18,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-st.write("DEBUG: set_page_config passed")
 
 # Estilização CSS adicional para vibe "Quant"
 st.markdown(
@@ -44,7 +40,6 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
-st.write("DEBUG: CSS markdown passed")
 
 
 # Caching de carregamento de universos
