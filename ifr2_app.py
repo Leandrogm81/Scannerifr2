@@ -18,6 +18,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+st.write("DEBUG: set_page_config passed")
 
 # Estilização CSS adicional para vibe "Quant"
 st.markdown(
@@ -40,6 +41,7 @@ st.markdown(
 """,
     unsafe_allow_html=True,
 )
+st.write("DEBUG: CSS markdown passed")
 
 
 # Caching de carregamento de universos
