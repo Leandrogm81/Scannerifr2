@@ -2,6 +2,7 @@
 
 import streamlit as st
 st.write("DEBUG: ifr2_app top reached")
+raise Exception("DEBUG CRASH TEST")
 import time
 
 # Bootstrap leve para renderizar a UI antes de carregar pandas/yfinance.
