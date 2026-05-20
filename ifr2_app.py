@@ -1,22 +1,14 @@
 """Aplicativo Streamlit para screening e backtesting de ações (IFR2 Miner & Screener)."""
 
 import streamlit as st
-import pandas as pd
-import plotly.graph_objects as go
 import time
 
-# Importar módulos refatorados
-from src.universe_registry import load_universe
-from src.data_fetcher import fetch_all_data
-from src.indicators import calc_indicators
-from src.backtester import run_backtest
-from src.screener import screen_tickers
-from src.fundamental import get_fundamental_data, classify_fundamental_health
-from src.advisor import run_ai_advice, load_advisor_config
-from config.settings import (
+# Bootstrap leve para renderizar a UI antes de carregar pandas/yfinance.
+from src.app_bootstrap import (
     DEFAULT_IBOV,
     DEFAULT_SMLL,
     DEFAULT_RSI_THRESHOLD,
+    load_universe,
 )
 
 # Configuração da página para estética premium
@@ -58,6 +50,8 @@ def get_universe_cached(code: str):
 
 @st.cache_data(ttl=21600)
 def get_fundamental_cached(ticker: str):
+    from src.fundamental import get_fundamental_data
+
     return get_fundamental_data(ticker)
 
 
@@ -236,6 +230,14 @@ with tab1:
     )
 
     if st.button("Executar Varredura", type="primary"):
+        import pandas as pd
+
+        from src.data_fetcher import fetch_all_data
+        from src.indicators import calc_indicators
+        from src.screener import screen_tickers
+        from src.fundamental import classify_fundamental_health
+        from src.advisor import load_advisor_config, run_ai_advice
+
         start_time = time.time()
 
         # Baixar dados usando a versão otimizada com progress bar real
@@ -413,6 +415,13 @@ with tab2:
     st.info("Comparação histórica dos ativos para validar a eficiência da estratégia.")
 
     if st.button("Iniciar Mineração", type="primary"):
+        import pandas as pd
+        import plotly.graph_objects as go
+
+        from src.backtester import run_backtest
+        from src.data_fetcher import fetch_all_data
+        from src.indicators import calc_indicators
+
         start_time = time.time()
 
         # Baixar dados usando a versão otimizada com progress bar real
