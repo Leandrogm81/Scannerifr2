@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRD - IFR2 Miner & Screener</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin-top: 25px;
+            padding-bottom: 8px;
+            border-bottom: 2px dashed #3498db;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        
+        .badge {
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        
+        .status-green { background: #27ae60; }
+        .status-yellow { background: #f39c12; }
+        .status-red { background: #e74c3c; }
+        
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .priority-high { color: #e74c3c; font-weight: bold; }
+        .priority-medium { color: #f39c12; font-weight: bold; }
+        .priority-low { color: #27ae60; font-weight: bold; }
+        
+        .risk-high { color: #e74c3c; background: #fadbd8; padding: 5px 10px; border-radius: 4px; }
+        .risk-medium { color: #f39c12; background: #fef9e7; padding: 5px 10px; border-radius: 4px; }
+        .risk-low { color: #27ae60; background: #d5f4e6; padding: 5px 10px; border-radius: 4px; }
+        
+        .wireframe {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f8f8f8;
+        }
+        
+        .mockup {
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .mockup img {
+            max-width: 100%;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #3498db;
+            color: white;
+        }
+        
+        tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Requirements Document (PRD) - IFR2 Miner & Screener</h1>
+        
+        <div class="section">
+            <h2>📋 Informações do Projeto</h2>
+            <table>
+                <tr><th>Projeto</th><td>IFR2 Miner & Screener</td></tr>
+                <tr><th>Versão</th><td>2.0.0</td></tr>
+                <tr><th>Autor</th><td>Leandro Gobbo Menezes</td></tr>
+                <tr><th>Data</th><td>20 de Maio de 2026</td></tr>
+                <tr><th>Última Atualização</th><td>20 de Maio de 2026</td></tr>
+                <tr><th>Escopo</th><td>Aplicação web para screening, backtesting e análise técnica de ações da B3 e mercado americano</td></tr>
+                <tr><th>Status</th><td><span class="badge status-green">Em Desenvolvimento</span></td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>🎯 Visão Geral</h2>
+            <p><strong>IFR2 Miner & Screener</strong> é uma aplicação web que ajuda investidores a identificar oportunidades no mercado financeiro através de análise técnica quantitativa. A ferramenta combina:</p>
+            
+            <ul>
+                <li><strong>Screening em tempo real</strong> - Varredura diária de ativos em condições de compra/venda</li>
+                <li><strong>Backtesting automatizado</strong> - Validação histórica de estratégias de investimento</li>
+                <li><strong>Analytics avançado</strong> - Métricas de desempenho e risco</li>
+                <li><strong>Suporte multi-mercado</strong> - B3 (Brasil) e NYSE/NASDAQ (EUA)</li>
+            </ul>
+            
+            <div class="note">
+                <strong>Importante:</strong> Esta aplicação é uma <em>ferramenta de análise</em> apenas. Não executa ordens de compra/venda no mercado financeiro. Todas as decisões de investimento devem ser feitas pelo usuário final, preferencialmente com o auxílio de um profissional qualificado.
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📈 Objetivos de Negócio</h2>
+            
+            <h3>Objetivos Primários (12-18 meses):</h3>
+            <ol>
+                <li><span class="priority-high">Aumentar a precisão das recomendações</span> - Reduzir sinais falsos através de filtros adicionais</li>
+                <li><span class="priority-high">Expandir para mercado americano</span> - Suporte completo a NYSE e NASDAQ</li>
+                <li><span class="priority-medium">Melhorar experiência do usuário</span> - Interface mais intuitiva e responsiva</li>
+                <li><span class="priority-medium">Adicionar gerenciamento de risco</span> - Stop loss, position sizing, diversificação</li>
+                <li><span class="priority-low">Integração com APIs de notícias</span> - Análise de sentimento e eventos</li>
+            </ol>
+            
+            <h3>Metas SMART:</h3>
+            <ul>
+                <li><strong>Usuários ativos:</strong> 500+ usuários mensais até Q4 2026</li>
+                <li><strong>Precisão:</strong> Atingir 65% de win rate no backtest (IBOV) e 60% (NYSE)</li>
+                <li><strong>Performance:</strong> Tempo de resposta < 5s para screening de 100 ativos</li>
+                <li><strong>Disponibilidade:</strong> 99.5% uptime (exceto manutenção)</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>👥 Público-Alvo</h2>
+            
+            <h3>Personas:</h3>
+            
+            <div class="wireframe">
+                <h4><strong>Roberto - Investidor Autônomo (35 anos)</strong></h4>
+                <p><em>"Preciso de ferramentas para tomar decisões mais embasadas no mercado."</em></p>
+                <ul>
+                    <li>Profissão: Analista de Sistemas</li>
+                    <li>Experiência: 5 anos investindo na B3</li>
+                    <li>Objetivo: Identificar oportunidades diárias com base em análise técnica</li>
+                    <li>Dores: Falta de tempo para análise manual, muitos sinais falsos</li>
+                    <li>Necessidades: Screening rápido, backtesting confiável, métricas claras</li>
+                </ul>
+            </div>
+            
+            <div class="wireframe">
+                <h4><strong>Clara - Assessora de Investimentos (42 anos)</strong></h4>
+                <p><em>"Preciso de uma segunda opinião para validar minhas recomendações."</em></p>
+                <ul>
+                    <li>Profissão: Assessora de Investimentos (XP)</li>
+                    <li>Experiência: 12 anos no mercado financeiro</li>
+                    <li>Objetivo: Ferramenta quantitativa para complementar análise fundamentalista</li>
+                    <li>Dores: Viés emocional, necessidade de dados objetivos</li>
+                    <li>Necessidades: Métricas de risco, comparativo com índices, relatórios profissionais</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>✨ Funcionalidades Principais</h2>
+            
+            <h3>Módulo 1: Screener em Tempo Real</h3>
+            <ul>
+                <li><strong>Varredura diária</strong> - IFR2 < threshold + Preço > SMA200 + Volume adequado</li>
+                <li><strong>Filtros customizados</strong> - Por setor, liquidez, mercado (B3/EUA)</li>
+                <li><strong>Resultados em tempo real</strong> - Tabela interativa com destaque para sinais</li>
+                <li><strong>Exportação</strong> - CSV e Excel com formatação profissional</li>
+            </ul>
+            
+            <h3>Módulo 2: Backtester Avançado</h3>
+            <ul>
+                <li><strong>Backtest histórico</strong> - Até 5 anos de dados</li>
+                <li><strong>Métricas completas</strong> - Win rate, profit factor, Sharpe ratio, drawdown</li>
+                <li><strong>Comparativo com buy & hold</strong> - Alpha e beta calculation</li>
+                <li><strong>Curvas de capital</strong> - Visualização da evolução do patrimônio</li>
+            </ul>
+            
+            <h3>Módulo 3: Analytics & Insights</h3>
+            <ul>
+                <li><strong>Ranking de ativos</strong> - Ordenado por métricas (Alpha, Win Rate, etc.)</li>
+                <li><strong>Heatmaps setoriais</strong> - Performance por setor/indústria</li>
+                <li><strong>Relatórios PDF</strong> - Com análise quantitativa pronta para cliente</li>
+                <li><strong>Exportação de gráficos</strong> - PNG e SVG para apresentações</li>
+            </ul>
+            
+            <h3>Módulo 4: Gerenciamento de Risco</h3>
+            <ul>
+                <li><strong>Position sizing</strong> - Baseado em capital e stop loss</li>
+                <li><strong>Stop loss automático</strong> - Suporte para trailing stop</li>
+                <li><strong>Limites de exposição</strong> - Setorial e total</li>
+                <li><strong>Monitoramento de drawdown</strong> - Alertas quando exceder limites</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Roadmap de Desenvolvimento</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trimestre</th>
+                        <th>Épico</th>
+                        <th>Features</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Q3 2026</strong></td>
+                        <td>Refatoração</td>
+                        <td>- Separação em módulos<br>- Testes unitários<br>- Logging estruturado</td>
+                        <td><span class="badge status-green">Em Andamento</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Q4 2026</strong></td>
+                        <td>Multi-mercado</td>
+                        <td>- Suporte a NYSE/NASDAQ<br>- Calendários de feriados<br>- Conversão de moeda</td>
+                        <td><span class="badge status-yellow">Planejado</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Q1 2027</strong></td>
+                        <td>Risco & Analytics</td>
+                        <td>- Position sizing<br>- Stop loss<br>- Relatórios PDF</td>
+                        <td><span class="badge status-red">Não Iniciado</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Q2 2027</strong></td>
+                        <td>Integrações</td>
+                        <td>- APIs de notícias<br>- Sentiment analysis<br>- Email/Telegram alerts</td>
+                        <td><span class="badge status-red">Não Iniciado</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>⚙️ Requisitos Técnicos</h2>
+            
+            <h3>Backend:</h3>
+            <ul>
+                <li><strong>Python 3.11+</strong> - Linguagem principal</li>
+                <li><strong>Streamlit 1.28+</strong> - Framework web</li>
+                <li><strong>yfinance 0.2+</strong> - Fonte de dados</li>
+                <li><strong>pandas 2.0+</strong> - Manipulação de dados</li>
+                <li><strong>plotly 5.13+</strong> - Visualização de gráficos</li>
+                <li><strong>celery + redis</strong> - Processamento assíncrono (futuro)</li>
+            </ul>
+            
+            <h3>Frontend:</h3>
+            <ul>
+                <li><strong>HTML/CSS/JavaScript</strong> - Customizações</li>
+                <li><strong>Bootstrap 5</strong> - Componentes responsivos</li>
+                <li><strong>Plotly.js</strong> - Gráficos interativos</li>
+            </ul>
+            
+            <h3>Infraestrutura:</h3>
+            <ul>
+                <li><strong>Docker</strong> - Containerização</li>
+                <li><strong>Docker Compose</strong> - Orquestração local</li>
+                <li><strong>PostgreSQL + TimescaleDB</strong> - Dados históricos</li>
+                <li><strong>Redis</strong> - Cache e filas</li>
+                <li><strong>NGINX</strong> - Reverse proxy</li>
+            </ul>
+            
+            <h3>Deploy:</h3>
+            <ul>
+                <li><strong>Vercel / Heroku</strong> - Opções iniciais</li>
+                <li><strong>AWS EC2 / GCP</strong> - Para produção</li>
+                <li><strong>Docker Hub</strong> - Registro de imagens</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>📈 Métricas de Sucesso</h2>
+            
+            <h3>Business Metrics:</h3>
+            <table>
+                <tr><th>Métrica</th><th>Meta Q4 2026</th><th>Como Medir</th></tr>
+                <tr><td>Usuários ativos mensais</td><td>500+</td><td>Analytics (PostHog/Mixpanel)</td></tr>
+                <tr><td>Taxa de retenção</td><td>40%</td><td>Usuários retornando após 30 dias</td></tr>
+                <tr><td>Tempo médio sessão</td><td>8+ minutos</td><td>Google Analytics</td></tr>
+                <tr><td>Conversão para premium</td><td>5%</td><td>Cadastro em newsletter/feature paga</td></tr>
+            </table>
+            
+            <h3>Technical Metrics:</h3>
+            <table>
+                <tr><th>Métrica</th><th>Meta</th><th>Ferramenta</th></tr>
+                <tr><td>Tempo de resposta (P95)</td><td>< 3s</td><td>Prometheus + Grafana</td></tr>
+                <tr><td>Uptime</td><td>> 99.5%</td><td>UptimeRobot</td></tr>
+                <tr><td>Erro rate</td><td>< 0.1%</td><td>Sentry</td></tr>
+                <tr><td>Backtest speed</td><td>< 10s/100 ativos</td><td>Benchmark interno</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>⚠️ Riscos e Mitigações</h2>
+            
+            <table>
+                <tr><th>Risco</th><th>Impacto</th><th>Probabilidade</th><th>Mitigação</th></tr>
+                
+                <tr>
+                    <td><span class="risk-high">Alterações na API yfinance</span></td>
+                    <td>Alto</td>
+                    <td>Média</td>
+                    <td>
+                        <ul>
+                            <li>Implementar fallback para Alpha Vantage/IEX Cloud</li>
+                            <li>Caching robusto de dados históricos</li>
+                            <li>Monitoramento de status da API</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span class="risk-high">Regulatório (CVM)</span></td>
+                    <td>Alto</td>
+                    <td>Baixa</td>
+                    <td>
+                        <ul>
+                            <li>Isenção clara de responsabilidade</li>
+                            <li>Não armazenar dados de clientes</li>
+                            <li>Consultoria jurídica especializada</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span class="risk-medium">Concorrência (TradingView, etc.)</span></td>
+                    <td>Médio</td>
+                    <td>Alta</td>
+                    <td>
+                        <ul>
+                            <li>Foco em simplicidade e custo (gratuito)</li>
+                            <li>Comunidade open source</li>
+                            <li>Integração com workflow existente</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span class="risk-medium">Performance com muitos usuários</span></td>
+                    <td>Médio</td>
+                    <td>Média</td>
+                    <td>
+                        <ul>
+                            <li>Arquitetura assíncrona desde o início</li>
+                            <li>Cache distribuído</li>
+                            <li>Auto-scaling na nuvem</li>
+                        </ul>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span class="risk-low">Dados incorretos/outdated</span></td>
+                    <td>Baixo</td>
+                    <td>Alta</td>
+                    <td>
+                        <ul>
+                            <li>Data de última atualização visível</li>
+                            <li>Cache com TTL de 1h</li>
+                            <li>Validação de dados (ex: volume > 0)</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>🖥️ Wireframes e Mockups</h2>
+            
+            <h3>Layout Principal - Screener:</h3>
+            <div class="mockup">
+                <img src="https://via.placeholder.com/800x600/3498db/ffffff?text=Screener+Layout+Mockup" alt="Screener Layout">
+                <p class="note">Layout proposto: Sidebar com filtros, tabela principal com resultados, destaque para sinais de compra.</p>
+            </div>
+            
+            <h3>Backtester - Curva de Capital:</h3>
+            <div class="mockup">
+                <img src="https://via.placeholder.com/800x400/2ecc71/ffffff?text=Equity+Curve+Graph" alt="Equity Curve">
+                <p class="note">Gráfico interativo mostrando evolução do capital vs buy & hold.</p>
+            </div>
+            
+            <h3>Analytics Dashboard:</h3>
+            <div class="mockup">
+                <img src="https://via.placeholder.com/800x600/e74c3c/ffffff?text=Analytics+Dashboard" alt="Analytics Dashboard">
+                <p class="note">Dashboard com métricas-chave, ranking de ativos, e heatmaps setoriais.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📚 Referências e Anexos</h2>
+            
+            <h3>Códigos Importantes:</h3>
+            <ul>
+                <li><strong>Ticker B3:</strong> PETR4.SA, VALE3.SA, ITUB4.SA, BBDC4.SA</li>
+                <li><strong>Ticker EUA:</strong> AAPL, TSLA, AMZN, GOOGL, MSFT</li>
+                <li><strong>Índices:</strong> ^BVSP (IBOV), ^GSPC (S&P500)</li>
+                <li><strong>ETF:</strong> SPY, QQQ, IWM</li>
+            </ul>
+            
+            <h3>APIs Utilizadas:</h3>
+            <ul>
+                <li><strong>yfinance</strong> - Fonte de dados históricos</li>
+                <li><strong>Streamlit</strong> - Framework web</li>
+                <li><strong>Alpha Vantage</strong> - Fallback (opcional)</li>
+                <li><strong>IEX Cloud</strong> - Fallback premium (futuro)</li>
+            </ul>
+            
+            <h3>Glossário:</h3>
+            <ul>
+                <li><strong>IFR2:</strong> Relative Strength Index de 2 períodos</li>
+                <li><strong>SMA200:</strong> Média móvel simples de 200 períodos</li>
+                <li><strong>Alpha:</strong> Excesso de retorno vs benchmark</li>
+                <li><strong>Sharpe Ratio:</strong> Retorno ajustado por risco</li>
+                <li><strong>Drawdown:</strong> Perda máxima desde o pico</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Product Requirements Document - IFR2 Miner & Screener v2.0.0</p>
+            <p>Desenvolvido para: Leandro Gobbo Menezes | leandrogmzl@gmail.com</p>
+            <p>Copyright © 2026 - Todos os direitos reservados</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,415 @@
+{
+  "project": "/mnt/c/Dev/IFR2",
+  "phase": "fase-manual",
+  "timestamp": "2026-05-19 23:50:23",
+  "score": 81,
+  "status": "ATENCAO",
+  "checks": [
+    {
+      "name": "py_compile",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python -m py_compile /mnt/c/Dev/IFR2/ifr2_app.py /mnt/c/Dev/IFR2/smoke_test.py /mnt/c/Dev/IFR2/integration_test.py /mnt/c/Dev/IFR2/src/__init__.py /mnt/c/Dev/IFR2/src/backtester.py /mnt/c/Dev/IFR2/src/data_fetcher.py /mnt/c/Dev/IFR2/src/indicators.py /mnt/c/Dev/IFR2/src/risk_manager.py /mnt/c/Dev/IFR2/src/screener.py /mnt/c/Dev/IFR2/src/universe_registry.py /mnt/c/Dev/IFR2/config/__init__.py /mnt/c/Dev/IFR2/config/settings.py /mnt/c/Dev/IFR2/scripts/refresh_universes.py",
+      "output": "",
+      "note": "Compilação dos arquivos Python do projeto"
+    },
+    {
+      "name": "smoke_test",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python /mnt/c/Dev/IFR2/smoke_test.py",
+      "output": "✅ Todos os módulos importados com sucesso!\n✅ Lista de ativos IBOV legado: 18 tickers\n✅ Lista TOP 100 B3: 100 tickers\n✅ Cálculo de indicadores funcionando!\n✅ IFR2 calculado: 100.00\n✅ Position sizing: R$ 2000.00\n\n✅ Smoke test concluído com sucesso!",
+      "note": "Execução do smoke_test.py"
+    },
+    {
+      "name": "integration_test",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python /mnt/c/Dev/IFR2/integration_test.py",
+      "output": "✅ Imports realizados com sucesso!\n✅ Módulos carregados: data_fetcher, indicators, backtester, screener, risk_manager, settings\n  ✅ data_fetcher.get_data existe\n  ✅ data_fetcher.fetch_all_data existe\n  ✅ indicators.calc_indicators existe\n  ✅ backtester.run_backtest existe\n  ✅ screener.screen_tickers existe\n  ✅ risk_manager.calculate_position_size existe\n\n✅ Configurações carregadas:\n   - DEFAULT_RSI_THRESHOLD: 10\n   - DEFAULT_IBOV tem 18 ativos\n   - TOP100_B3 tem 100 ativos\n   - TOP500_US tem 500 ativos\n\n✅ Todas as verificações passaram! A refatoração está coerente.",
+      "note": "Execução do integration_test.py"
+    },
+    {
+      "name": "pytest",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python -m pytest -q",
+      "output": "...............                                                          [100%]\n15 passed in 10.84s",
+      "note": "Execução de 5 arquivo(s) em tests/"
+    },
+    {
+      "name": "pip_check",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python -m pip check",
+      "output": "No broken requirements found.",
+      "note": "Verificação de dependências instaladas"
+    },
+    {
+      "name": "flake8",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python -m flake8 /mnt/c/Dev/IFR2/ifr2_app.py /mnt/c/Dev/IFR2/smoke_test.py /mnt/c/Dev/IFR2/integration_test.py /mnt/c/Dev/IFR2/src/__init__.py /mnt/c/Dev/IFR2/src/backtester.py /mnt/c/Dev/IFR2/src/data_fetcher.py /mnt/c/Dev/IFR2/src/indicators.py /mnt/c/Dev/IFR2/src/risk_manager.py /mnt/c/Dev/IFR2/src/screener.py /mnt/c/Dev/IFR2/src/universe_registry.py /mnt/c/Dev/IFR2/config/__init__.py /mnt/c/Dev/IFR2/config/settings.py /mnt/c/Dev/IFR2/scripts/refresh_universes.py",
+      "output": "",
+      "note": "Checagem de estilo com flake8"
+    },
+    {
+      "name": "black",
+      "status": "OK",
+      "code": 0,
+      "command": "/mnt/c/Dev/IFR2/venv/bin/python -m black --check /mnt/c/Dev/IFR2/ifr2_app.py /mnt/c/Dev/IFR2/smoke_test.py /mnt/c/Dev/IFR2/integration_test.py /mnt/c/Dev/IFR2/src/__init__.py /mnt/c/Dev/IFR2/src/backtester.py /mnt/c/Dev/IFR2/src/data_fetcher.py /mnt/c/Dev/IFR2/src/indicators.py /mnt/c/Dev/IFR2/src/risk_manager.py /mnt/c/Dev/IFR2/src/screener.py /mnt/c/Dev/IFR2/src/universe_registry.py /mnt/c/Dev/IFR2/config/__init__.py /mnt/c/Dev/IFR2/config/settings.py /mnt/c/Dev/IFR2/scripts/refresh_universes.py",
+      "output": "All done! ✨ 🍰 ✨\n13 files would be left unchanged.",
+      "note": "Checagem de formatação com black"
+    }
+  ],
+  "metrics": {
+    "file_count": 13,
+    "line_count": 1715,
+    "files_over_300": [
+      {
+        "file": "ifr2_app.py",
+        "lines": 425
+      },
+      {
+        "file": "src/universe_registry.py",
+        "lines": 397
+      },
+      {
+        "file": "scripts/refresh_universes.py",
+        "lines": 324
+      }
+    ],
+    "long_functions": [
+      {
+        "file": "src/backtester.py",
+        "function": "run_backtest",
+        "lines": 68,
+        "start": 6
+      },
+      {
+        "file": "integration_test.py",
+        "function": "main",
+        "lines": 65,
+        "start": 8
+      },
+      {
+        "file": "src/screener.py",
+        "function": "screen_tickers",
+        "lines": 63,
+        "start": 8
+      },
+      {
+        "file": "smoke_test.py",
+        "function": "main",
+        "lines": 57,
+        "start": 10
+      },
+      {
+        "file": "src/universe_registry.py",
+        "function": "_normalize_loaded_frame",
+        "lines": 56,
+        "start": 198
+      },
+      {
+        "file": "scripts/refresh_universes.py",
+        "function": "_refresh_one",
+        "lines": 55,
+        "start": 202
+      }
+    ],
+    "syntax_errors": [],
+    "broad_excepts": 3,
+    "bare_excepts": 0,
+    "eval_calls": 0,
+    "exec_calls": 0,
+    "print_calls_runtime": 4,
+    "todo_count": 0,
+    "cache_hits": 3,
+    "longest_files": [
+      {
+        "file": "ifr2_app.py",
+        "lines": 425
+      },
+      {
+        "file": "src/universe_registry.py",
+        "lines": 397
+      },
+      {
+        "file": "scripts/refresh_universes.py",
+        "lines": 324
+      },
+      {
+        "file": "src/data_fetcher.py",
+        "lines": 88
+      },
+      {
+        "file": "integration_test.py",
+        "lines": 76
+      },
+      {
+        "file": "src/risk_manager.py",
+        "lines": 75
+      },
+      {
+        "file": "config/settings.py",
+        "lines": 75
+      },
+      {
+        "file": "src/backtester.py",
+        "lines": 73
+      },
+      {
+        "file": "smoke_test.py",
+        "lines": 70
+      },
+      {
+        "file": "src/screener.py",
+        "lines": 70
+      }
+    ],
+    "per_file": [
+      {
+        "path": "/mnt/c/Dev/IFR2/ifr2_app.py",
+        "relative": "ifr2_app.py",
+        "lines": 425,
+        "too_long": true,
+        "todo_count": 0,
+        "cache_hits": 1,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/smoke_test.py",
+        "relative": "smoke_test.py",
+        "lines": 70,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 1,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [
+          {
+            "name": "main",
+            "lines": 57,
+            "start": 10
+          }
+        ],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/integration_test.py",
+        "relative": "integration_test.py",
+        "lines": 76,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 1,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [
+          {
+            "name": "main",
+            "lines": 65,
+            "start": 8
+          }
+        ],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/__init__.py",
+        "relative": "src/__init__.py",
+        "lines": 1,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/backtester.py",
+        "relative": "src/backtester.py",
+        "lines": 73,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [
+          {
+            "name": "run_backtest",
+            "lines": 68,
+            "start": 6
+          }
+        ],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/data_fetcher.py",
+        "relative": "src/data_fetcher.py",
+        "lines": 88,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 1,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/indicators.py",
+        "relative": "src/indicators.py",
+        "lines": 40,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/risk_manager.py",
+        "relative": "src/risk_manager.py",
+        "lines": 75,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/screener.py",
+        "relative": "src/screener.py",
+        "lines": 70,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [
+          {
+            "name": "screen_tickers",
+            "lines": 63,
+            "start": 8
+          }
+        ],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/src/universe_registry.py",
+        "relative": "src/universe_registry.py",
+        "lines": 397,
+        "too_long": true,
+        "todo_count": 0,
+        "cache_hits": 2,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [
+          {
+            "name": "_normalize_loaded_frame",
+            "lines": 56,
+            "start": 198
+          }
+        ],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/config/__init__.py",
+        "relative": "config/__init__.py",
+        "lines": 1,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/config/settings.py",
+        "relative": "config/settings.py",
+        "lines": 75,
+        "too_long": false,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 0,
+        "long_functions": [],
+        "syntax_error": null
+      },
+      {
+        "path": "/mnt/c/Dev/IFR2/scripts/refresh_universes.py",
+        "relative": "scripts/refresh_universes.py",
+        "lines": 324,
+        "too_long": true,
+        "todo_count": 0,
+        "cache_hits": 0,
+        "broad_excepts": 0,
+        "bare_excepts": 0,
+        "eval_calls": 0,
+        "exec_calls": 0,
+        "print_calls": 4,
+        "long_functions": [
+          {
+            "name": "_refresh_one",
+            "lines": 55,
+            "start": 202
+          }
+        ],
+        "syntax_error": null
+      }
+    ]
+  },
+  "regressions": [],
+  "git": {
+    "branch": "desconhecido",
+    "last_commit": "sem commits",
+    "uncommitted": -1
+  },
+  "formal_tests_present": true,
+  "formal_test_count": 5,
+  "report_file": "/mnt/c/Dev/IFR2/auditoria/guardian/status-20260519-235023-fase-manual.html",
+  "latest_file": "/mnt/c/Dev/IFR2/auditoria/guardian/status-latest.html",
+  "state_file": "/mnt/c/Dev/IFR2/auditoria/guardian/last-state.json"
+}

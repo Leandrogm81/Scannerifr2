@@ -1,0 +1,501 @@
+ticker,market,currency,rank,source,updated_at,name,sector
+MMM,NYSE/NASDAQ,USD,1,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,3M,Industrial Conglomerates
+AOS,NYSE/NASDAQ,USD,2,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,A. O. Smith,Building Products
+ABT,NYSE/NASDAQ,USD,3,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Abbott Laboratories,Health Care Equipment
+ABBV,NYSE/NASDAQ,USD,4,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,AbbVie,Biotechnology
+ACN,NYSE/NASDAQ,USD,5,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Accenture,IT Consulting & Other Services
+ADBE,NYSE/NASDAQ,USD,6,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Adobe Inc.,Application Software
+AMD,NYSE/NASDAQ,USD,7,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Advanced Micro Devices,Semiconductors
+AES,NYSE/NASDAQ,USD,8,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,AES Corporation,Independent Power Producers & Energy Traders
+AFL,NYSE/NASDAQ,USD,9,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Aflac,Life & Health Insurance
+A,NYSE/NASDAQ,USD,10,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Agilent Technologies,Life Sciences Tools & Services
+APD,NYSE/NASDAQ,USD,11,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Air Products,Industrial Gases
+ABNB,NYSE/NASDAQ,USD,12,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Airbnb,"Hotels, Resorts & Cruise Lines"
+AKAM,NYSE/NASDAQ,USD,13,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Akamai Technologies,Internet Services & Infrastructure
+ALB,NYSE/NASDAQ,USD,14,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Albemarle Corporation,Specialty Chemicals
+ARE,NYSE/NASDAQ,USD,15,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Alexandria Real Estate Equities,Office REITs
+ALGN,NYSE/NASDAQ,USD,16,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Align Technology,Health Care Supplies
+ALLE,NYSE/NASDAQ,USD,17,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Allegion,Building Products
+LNT,NYSE/NASDAQ,USD,18,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Alliant Energy,Electric Utilities
+ALL,NYSE/NASDAQ,USD,19,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Allstate,Property & Casualty Insurance
+GOOGL,NYSE/NASDAQ,USD,20,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Alphabet Inc. (Class A),Interactive Media & Services
+GOOG,NYSE/NASDAQ,USD,21,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Alphabet Inc. (Class C),Interactive Media & Services
+MO,NYSE/NASDAQ,USD,22,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Altria,Tobacco
+AMZN,NYSE/NASDAQ,USD,23,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Amazon,Broadline Retail
+AMCR,NYSE/NASDAQ,USD,24,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Amcor,Paper & Plastic Packaging Products & Materials
+AMTM,NYSE/NASDAQ,USD,25,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Amentum,Diversified Support Services
+AEE,NYSE/NASDAQ,USD,26,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ameren,Multi-Utilities
+AEP,NYSE/NASDAQ,USD,27,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,American Electric Power,Electric Utilities
+AXP,NYSE/NASDAQ,USD,28,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,American Express,Consumer Finance
+AIG,NYSE/NASDAQ,USD,29,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,American International Group,Multi-line Insurance
+AMT,NYSE/NASDAQ,USD,30,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,American Tower,Telecom Tower REITs
+AWK,NYSE/NASDAQ,USD,31,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,American Water Works,Water Utilities
+AMP,NYSE/NASDAQ,USD,32,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ameriprise Financial,Asset Management & Custody Banks
+AME,NYSE/NASDAQ,USD,33,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ametek,Electrical Components & Equipment
+AMGN,NYSE/NASDAQ,USD,34,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Amgen,Biotechnology
+APH,NYSE/NASDAQ,USD,35,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Amphenol,Electronic Components
+ADI,NYSE/NASDAQ,USD,36,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Analog Devices,Semiconductors
+ANSS,NYSE/NASDAQ,USD,37,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ansys,Application Software
+AON,NYSE/NASDAQ,USD,38,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Aon,Insurance Brokers
+APA,NYSE/NASDAQ,USD,39,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,APA Corporation,Oil & Gas Exploration & Production
+AAPL,NYSE/NASDAQ,USD,40,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Apple Inc.,"Technology Hardware, Storage & Peripherals"
+AMAT,NYSE/NASDAQ,USD,41,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Applied Materials,Semiconductor Materials & Equipment
+APTV,NYSE/NASDAQ,USD,42,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Aptiv,Automotive Parts & Equipment
+ACGL,NYSE/NASDAQ,USD,43,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Arch Capital Group,Property & Casualty Insurance
+ADM,NYSE/NASDAQ,USD,44,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Archer Daniels Midland,Agricultural Products & Services
+ANET,NYSE/NASDAQ,USD,45,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Arista Networks,Communications Equipment
+AJG,NYSE/NASDAQ,USD,46,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Arthur J. Gallagher & Co.,Insurance Brokers
+AIZ,NYSE/NASDAQ,USD,47,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Assurant,Multi-line Insurance
+T,NYSE/NASDAQ,USD,48,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,AT&T,Integrated Telecommunication Services
+ATO,NYSE/NASDAQ,USD,49,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Atmos Energy,Gas Utilities
+ADSK,NYSE/NASDAQ,USD,50,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Autodesk,Application Software
+ADP,NYSE/NASDAQ,USD,51,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Automatic Data Processing,Human Resource & Employment Services
+AZO,NYSE/NASDAQ,USD,52,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,AutoZone,Automotive Retail
+AVB,NYSE/NASDAQ,USD,53,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,AvalonBay Communities,Multi-Family Residential REITs
+AVY,NYSE/NASDAQ,USD,54,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Avery Dennison,Paper & Plastic Packaging Products & Materials
+AXON,NYSE/NASDAQ,USD,55,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Axon Enterprise,Aerospace & Defense
+BKR,NYSE/NASDAQ,USD,56,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Baker Hughes,Oil & Gas Equipment & Services
+BALL,NYSE/NASDAQ,USD,57,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ball Corporation,"Metal, Glass & Plastic Containers"
+BAC,NYSE/NASDAQ,USD,58,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Bank of America,Diversified Banks
+BAX,NYSE/NASDAQ,USD,59,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Baxter International,Health Care Equipment
+BDX,NYSE/NASDAQ,USD,60,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Becton Dickinson,Health Care Equipment
+BRK.B,NYSE/NASDAQ,USD,61,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Berkshire Hathaway,Multi-Sector Holdings
+BBY,NYSE/NASDAQ,USD,62,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Best Buy,Computer & Electronics Retail
+TECH,NYSE/NASDAQ,USD,63,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Bio-Techne,Life Sciences Tools & Services
+BIIB,NYSE/NASDAQ,USD,64,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Biogen,Biotechnology
+BLK,NYSE/NASDAQ,USD,65,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,BlackRock,Asset Management & Custody Banks
+BX,NYSE/NASDAQ,USD,66,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Blackstone Inc.,Asset Management & Custody Banks
+BK,NYSE/NASDAQ,USD,67,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,BNY Mellon,Asset Management & Custody Banks
+BA,NYSE/NASDAQ,USD,68,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Boeing,Aerospace & Defense
+BKNG,NYSE/NASDAQ,USD,69,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Booking Holdings,"Hotels, Resorts & Cruise Lines"
+BWA,NYSE/NASDAQ,USD,70,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,BorgWarner,Automotive Parts & Equipment
+BSX,NYSE/NASDAQ,USD,71,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Boston Scientific,Health Care Equipment
+BMY,NYSE/NASDAQ,USD,72,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Bristol Myers Squibb,Pharmaceuticals
+AVGO,NYSE/NASDAQ,USD,73,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Broadcom,Semiconductors
+BR,NYSE/NASDAQ,USD,74,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Broadridge Financial Solutions,Data Processing & Outsourced Services
+BRO,NYSE/NASDAQ,USD,75,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Brown & Brown,Insurance Brokers
+BF.B,NYSE/NASDAQ,USD,76,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Brown–Forman,Distillers & Vintners
+BLDR,NYSE/NASDAQ,USD,77,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Builders FirstSource,Building Products
+BG,NYSE/NASDAQ,USD,78,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Bunge Global,Agricultural Products & Services
+BXP,NYSE/NASDAQ,USD,79,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"BXP, Inc.",Office REITs
+CHRW,NYSE/NASDAQ,USD,80,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,C.H. Robinson,Air Freight & Logistics
+CDNS,NYSE/NASDAQ,USD,81,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cadence Design Systems,Application Software
+CZR,NYSE/NASDAQ,USD,82,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Caesars Entertainment,Casinos & Gaming
+CPT,NYSE/NASDAQ,USD,83,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Camden Property Trust,Multi-Family Residential REITs
+CPB,NYSE/NASDAQ,USD,84,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Campbell Soup Company,Packaged Foods & Meats
+COF,NYSE/NASDAQ,USD,85,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Capital One,Consumer Finance
+CAH,NYSE/NASDAQ,USD,86,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cardinal Health,Health Care Distributors
+KMX,NYSE/NASDAQ,USD,87,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CarMax,Automotive Retail
+CCL,NYSE/NASDAQ,USD,88,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Carnival,"Hotels, Resorts & Cruise Lines"
+CARR,NYSE/NASDAQ,USD,89,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Carrier Global,Building Products
+CTLT,NYSE/NASDAQ,USD,90,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Catalent,Pharmaceuticals
+CAT,NYSE/NASDAQ,USD,91,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Caterpillar Inc.,Construction Machinery & Heavy Transportation Equipment
+CBOE,NYSE/NASDAQ,USD,92,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cboe Global Markets,Financial Exchanges & Data
+CBRE,NYSE/NASDAQ,USD,93,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CBRE Group,Real Estate Services
+CDW,NYSE/NASDAQ,USD,94,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CDW,Technology Distributors
+CE,NYSE/NASDAQ,USD,95,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Celanese,Specialty Chemicals
+COR,NYSE/NASDAQ,USD,96,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cencora,Health Care Distributors
+CNC,NYSE/NASDAQ,USD,97,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Centene Corporation,Managed Health Care
+CNP,NYSE/NASDAQ,USD,98,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CenterPoint Energy,Multi-Utilities
+CF,NYSE/NASDAQ,USD,99,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CF Industries,Fertilizers & Agricultural Chemicals
+CRL,NYSE/NASDAQ,USD,100,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Charles River Laboratories,Life Sciences Tools & Services
+SCHW,NYSE/NASDAQ,USD,101,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Charles Schwab Corporation,Investment Banking & Brokerage
+CHTR,NYSE/NASDAQ,USD,102,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Charter Communications,Cable & Satellite
+CVX,NYSE/NASDAQ,USD,103,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Chevron Corporation,Integrated Oil & Gas
+CMG,NYSE/NASDAQ,USD,104,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Chipotle Mexican Grill,Restaurants
+CB,NYSE/NASDAQ,USD,105,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Chubb Limited,Property & Casualty Insurance
+CHD,NYSE/NASDAQ,USD,106,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Church & Dwight,Household Products
+CI,NYSE/NASDAQ,USD,107,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cigna,Health Care Services
+CINF,NYSE/NASDAQ,USD,108,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cincinnati Financial,Property & Casualty Insurance
+CTAS,NYSE/NASDAQ,USD,109,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cintas,Diversified Support Services
+CSCO,NYSE/NASDAQ,USD,110,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cisco,Communications Equipment
+C,NYSE/NASDAQ,USD,111,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Citigroup,Diversified Banks
+CFG,NYSE/NASDAQ,USD,112,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Citizens Financial Group,Regional Banks
+CLX,NYSE/NASDAQ,USD,113,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Clorox,Household Products
+CME,NYSE/NASDAQ,USD,114,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CME Group,Financial Exchanges & Data
+CMS,NYSE/NASDAQ,USD,115,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CMS Energy,Multi-Utilities
+KO,NYSE/NASDAQ,USD,116,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Coca-Cola Company (The),Soft Drinks & Non-alcoholic Beverages
+CTSH,NYSE/NASDAQ,USD,117,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cognizant,IT Consulting & Other Services
+CL,NYSE/NASDAQ,USD,118,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Colgate-Palmolive,Household Products
+CMCSA,NYSE/NASDAQ,USD,119,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Comcast,Cable & Satellite
+CAG,NYSE/NASDAQ,USD,120,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Conagra Brands,Packaged Foods & Meats
+COP,NYSE/NASDAQ,USD,121,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,ConocoPhillips,Oil & Gas Exploration & Production
+ED,NYSE/NASDAQ,USD,122,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Consolidated Edison,Multi-Utilities
+STZ,NYSE/NASDAQ,USD,123,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Constellation Brands,Distillers & Vintners
+CEG,NYSE/NASDAQ,USD,124,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Constellation Energy,Electric Utilities
+COO,NYSE/NASDAQ,USD,125,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cooper Companies (The),Health Care Supplies
+CPRT,NYSE/NASDAQ,USD,126,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Copart,Diversified Support Services
+GLW,NYSE/NASDAQ,USD,127,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Corning Inc.,Electronic Components
+CPAY,NYSE/NASDAQ,USD,128,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Corpay,Transaction & Payment Processing Services
+CTVA,NYSE/NASDAQ,USD,129,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Corteva,Fertilizers & Agricultural Chemicals
+CSGP,NYSE/NASDAQ,USD,130,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CoStar Group,Real Estate Services
+COST,NYSE/NASDAQ,USD,131,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Costco,Consumer Staples Merchandise Retail
+CTRA,NYSE/NASDAQ,USD,132,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Coterra,Oil & Gas Exploration & Production
+CRWD,NYSE/NASDAQ,USD,133,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CrowdStrike,Systems Software
+CCI,NYSE/NASDAQ,USD,134,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Crown Castle,Telecom Tower REITs
+CSX,NYSE/NASDAQ,USD,135,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CSX Corporation,Rail Transportation
+CMI,NYSE/NASDAQ,USD,136,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Cummins,Construction Machinery & Heavy Transportation Equipment
+CVS,NYSE/NASDAQ,USD,137,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,CVS Health,Health Care Services
+DHI,NYSE/NASDAQ,USD,138,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,D. R. Horton,Homebuilding
+DHR,NYSE/NASDAQ,USD,139,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Danaher Corporation,Life Sciences Tools & Services
+DRI,NYSE/NASDAQ,USD,140,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Darden Restaurants,Restaurants
+DVA,NYSE/NASDAQ,USD,141,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,DaVita,Health Care Services
+DAY,NYSE/NASDAQ,USD,142,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dayforce,Human Resource & Employment Services
+DECK,NYSE/NASDAQ,USD,143,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Deckers Brands,Footwear
+DE,NYSE/NASDAQ,USD,144,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Deere & Company,Agricultural & Farm Machinery
+DELL,NYSE/NASDAQ,USD,145,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dell Technologies,"Technology Hardware, Storage & Peripherals"
+DAL,NYSE/NASDAQ,USD,146,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Delta Air Lines,Passenger Airlines
+DVN,NYSE/NASDAQ,USD,147,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Devon Energy,Oil & Gas Exploration & Production
+DXCM,NYSE/NASDAQ,USD,148,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dexcom,Health Care Equipment
+FANG,NYSE/NASDAQ,USD,149,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Diamondback Energy,Oil & Gas Exploration & Production
+DLR,NYSE/NASDAQ,USD,150,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Digital Realty,Data Center REITs
+DFS,NYSE/NASDAQ,USD,151,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Discover Financial,Consumer Finance
+DG,NYSE/NASDAQ,USD,152,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dollar General,Consumer Staples Merchandise Retail
+DLTR,NYSE/NASDAQ,USD,153,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dollar Tree,Consumer Staples Merchandise Retail
+D,NYSE/NASDAQ,USD,154,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dominion Energy,Multi-Utilities
+DPZ,NYSE/NASDAQ,USD,155,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Domino's,Restaurants
+DOV,NYSE/NASDAQ,USD,156,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dover Corporation,Industrial Machinery & Supplies & Components
+DOW,NYSE/NASDAQ,USD,157,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Dow Inc.,Commodity Chemicals
+DTE,NYSE/NASDAQ,USD,158,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,DTE Energy,Multi-Utilities
+DUK,NYSE/NASDAQ,USD,159,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Duke Energy,Electric Utilities
+DD,NYSE/NASDAQ,USD,160,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,DuPont,Specialty Chemicals
+EMN,NYSE/NASDAQ,USD,161,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Eastman Chemical Company,Specialty Chemicals
+ETN,NYSE/NASDAQ,USD,162,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Eaton Corporation,Electrical Components & Equipment
+EBAY,NYSE/NASDAQ,USD,163,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,eBay,Broadline Retail
+ECL,NYSE/NASDAQ,USD,164,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ecolab,Specialty Chemicals
+EIX,NYSE/NASDAQ,USD,165,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Edison International,Electric Utilities
+EW,NYSE/NASDAQ,USD,166,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Edwards Lifesciences,Health Care Equipment
+EA,NYSE/NASDAQ,USD,167,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Electronic Arts,Interactive Home Entertainment
+ELV,NYSE/NASDAQ,USD,168,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Elevance Health,Managed Health Care
+EMR,NYSE/NASDAQ,USD,169,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Emerson Electric,Electrical Components & Equipment
+ENPH,NYSE/NASDAQ,USD,170,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Enphase Energy,Semiconductor Materials & Equipment
+ETR,NYSE/NASDAQ,USD,171,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Entergy,Electric Utilities
+EOG,NYSE/NASDAQ,USD,172,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,EOG Resources,Oil & Gas Exploration & Production
+EPAM,NYSE/NASDAQ,USD,173,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,EPAM Systems,IT Consulting & Other Services
+EQT,NYSE/NASDAQ,USD,174,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,EQT Corporation,Oil & Gas Exploration & Production
+EFX,NYSE/NASDAQ,USD,175,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Equifax,Research & Consulting Services
+EQIX,NYSE/NASDAQ,USD,176,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Equinix,Data Center REITs
+EQR,NYSE/NASDAQ,USD,177,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Equity Residential,Multi-Family Residential REITs
+ERIE,NYSE/NASDAQ,USD,178,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Erie Indemnity,Insurance Brokers
+ESS,NYSE/NASDAQ,USD,179,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Essex Property Trust,Multi-Family Residential REITs
+EL,NYSE/NASDAQ,USD,180,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Estée Lauder Companies (The),Personal Care Products
+EG,NYSE/NASDAQ,USD,181,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Everest Group,Reinsurance
+EVRG,NYSE/NASDAQ,USD,182,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Evergy,Electric Utilities
+ES,NYSE/NASDAQ,USD,183,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Eversource Energy,Electric Utilities
+EXC,NYSE/NASDAQ,USD,184,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Exelon,Electric Utilities
+EXPE,NYSE/NASDAQ,USD,185,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Expedia Group,"Hotels, Resorts & Cruise Lines"
+EXPD,NYSE/NASDAQ,USD,186,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Expeditors International,Air Freight & Logistics
+EXR,NYSE/NASDAQ,USD,187,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Extra Space Storage,Self-Storage REITs
+XOM,NYSE/NASDAQ,USD,188,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,ExxonMobil,Integrated Oil & Gas
+FFIV,NYSE/NASDAQ,USD,189,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"F5, Inc.",Communications Equipment
+FDS,NYSE/NASDAQ,USD,190,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,FactSet,Financial Exchanges & Data
+FICO,NYSE/NASDAQ,USD,191,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fair Isaac,Application Software
+FAST,NYSE/NASDAQ,USD,192,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fastenal,Trading Companies & Distributors
+FRT,NYSE/NASDAQ,USD,193,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Federal Realty Investment Trust,Retail REITs
+FDX,NYSE/NASDAQ,USD,194,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,FedEx,Air Freight & Logistics
+FIS,NYSE/NASDAQ,USD,195,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fidelity National Information Services,Transaction & Payment Processing Services
+FITB,NYSE/NASDAQ,USD,196,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fifth Third Bancorp,Regional Banks
+FSLR,NYSE/NASDAQ,USD,197,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,First Solar,Semiconductors
+FE,NYSE/NASDAQ,USD,198,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,FirstEnergy,Electric Utilities
+FI,NYSE/NASDAQ,USD,199,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fiserv,Transaction & Payment Processing Services
+FMC,NYSE/NASDAQ,USD,200,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,FMC Corporation,Fertilizers & Agricultural Chemicals
+F,NYSE/NASDAQ,USD,201,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ford Motor Company,Automobile Manufacturers
+FTNT,NYSE/NASDAQ,USD,202,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fortinet,Systems Software
+FTV,NYSE/NASDAQ,USD,203,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fortive,Industrial Machinery & Supplies & Components
+FOXA,NYSE/NASDAQ,USD,204,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fox Corporation (Class A),Broadcasting
+FOX,NYSE/NASDAQ,USD,205,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Fox Corporation (Class B),Broadcasting
+BEN,NYSE/NASDAQ,USD,206,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Franklin Resources,Asset Management & Custody Banks
+FCX,NYSE/NASDAQ,USD,207,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Freeport-McMoRan,Copper
+GRMN,NYSE/NASDAQ,USD,208,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Garmin,Consumer Electronics
+IT,NYSE/NASDAQ,USD,209,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Gartner,IT Consulting & Other Services
+GE,NYSE/NASDAQ,USD,210,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,GE Aerospace,Aerospace & Defense
+GEHC,NYSE/NASDAQ,USD,211,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,GE HealthCare,Health Care Equipment
+GEV,NYSE/NASDAQ,USD,212,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,GE Vernova,Heavy Electrical Equipment
+GEN,NYSE/NASDAQ,USD,213,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Gen Digital,Systems Software
+GNRC,NYSE/NASDAQ,USD,214,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Generac,Electrical Components & Equipment
+GD,NYSE/NASDAQ,USD,215,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,General Dynamics,Aerospace & Defense
+GIS,NYSE/NASDAQ,USD,216,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,General Mills,Packaged Foods & Meats
+GM,NYSE/NASDAQ,USD,217,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,General Motors,Automobile Manufacturers
+GPC,NYSE/NASDAQ,USD,218,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Genuine Parts Company,Distributors
+GILD,NYSE/NASDAQ,USD,219,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Gilead Sciences,Biotechnology
+GPN,NYSE/NASDAQ,USD,220,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Global Payments,Transaction & Payment Processing Services
+GL,NYSE/NASDAQ,USD,221,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Globe Life,Life & Health Insurance
+GDDY,NYSE/NASDAQ,USD,222,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,GoDaddy,Internet Services & Infrastructure
+GS,NYSE/NASDAQ,USD,223,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Goldman Sachs,Investment Banking & Brokerage
+HAL,NYSE/NASDAQ,USD,224,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Halliburton,Oil & Gas Equipment & Services
+HIG,NYSE/NASDAQ,USD,225,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hartford (The),Property & Casualty Insurance
+HAS,NYSE/NASDAQ,USD,226,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hasbro,Leisure Products
+HCA,NYSE/NASDAQ,USD,227,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,HCA Healthcare,Health Care Facilities
+DOC,NYSE/NASDAQ,USD,228,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Healthpeak Properties,Health Care REITs
+HSIC,NYSE/NASDAQ,USD,229,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Henry Schein,Health Care Distributors
+HSY,NYSE/NASDAQ,USD,230,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hershey Company (The),Packaged Foods & Meats
+HES,NYSE/NASDAQ,USD,231,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hess Corporation,Integrated Oil & Gas
+HPE,NYSE/NASDAQ,USD,232,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hewlett Packard Enterprise,"Technology Hardware, Storage & Peripherals"
+HLT,NYSE/NASDAQ,USD,233,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hilton Worldwide,"Hotels, Resorts & Cruise Lines"
+HOLX,NYSE/NASDAQ,USD,234,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hologic,Health Care Equipment
+HD,NYSE/NASDAQ,USD,235,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Home Depot (The),Home Improvement Retail
+HON,NYSE/NASDAQ,USD,236,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Honeywell,Industrial Conglomerates
+HRL,NYSE/NASDAQ,USD,237,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hormel Foods,Packaged Foods & Meats
+HST,NYSE/NASDAQ,USD,238,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Host Hotels & Resorts,Hotel & Resort REITs
+HWM,NYSE/NASDAQ,USD,239,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Howmet Aerospace,Aerospace & Defense
+HPQ,NYSE/NASDAQ,USD,240,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,HP Inc.,"Technology Hardware, Storage & Peripherals"
+HUBB,NYSE/NASDAQ,USD,241,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Hubbell Incorporated,Industrial Machinery & Supplies & Components
+HUM,NYSE/NASDAQ,USD,242,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Humana,Managed Health Care
+HBAN,NYSE/NASDAQ,USD,243,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Huntington Bancshares,Regional Banks
+HII,NYSE/NASDAQ,USD,244,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Huntington Ingalls Industries,Aerospace & Defense
+IBM,NYSE/NASDAQ,USD,245,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,IBM,IT Consulting & Other Services
+IEX,NYSE/NASDAQ,USD,246,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,IDEX Corporation,Industrial Machinery & Supplies & Components
+IDXX,NYSE/NASDAQ,USD,247,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Idexx Laboratories,Health Care Equipment
+ITW,NYSE/NASDAQ,USD,248,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Illinois Tool Works,Industrial Machinery & Supplies & Components
+INCY,NYSE/NASDAQ,USD,249,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Incyte,Biotechnology
+IR,NYSE/NASDAQ,USD,250,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ingersoll Rand,Industrial Machinery & Supplies & Components
+PODD,NYSE/NASDAQ,USD,251,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Insulet Corporation,Health Care Equipment
+INTC,NYSE/NASDAQ,USD,252,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Intel,Semiconductors
+ICE,NYSE/NASDAQ,USD,253,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Intercontinental Exchange,Financial Exchanges & Data
+IFF,NYSE/NASDAQ,USD,254,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,International Flavors & Fragrances,Specialty Chemicals
+IP,NYSE/NASDAQ,USD,255,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,International Paper,Paper & Plastic Packaging Products & Materials
+IPG,NYSE/NASDAQ,USD,256,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Interpublic Group of Companies (The),Advertising
+INTU,NYSE/NASDAQ,USD,257,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Intuit,Application Software
+ISRG,NYSE/NASDAQ,USD,258,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Intuitive Surgical,Health Care Equipment
+IVZ,NYSE/NASDAQ,USD,259,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Invesco,Asset Management & Custody Banks
+INVH,NYSE/NASDAQ,USD,260,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Invitation Homes,Single-Family Residential REITs
+IQV,NYSE/NASDAQ,USD,261,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,IQVIA,Life Sciences Tools & Services
+IRM,NYSE/NASDAQ,USD,262,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Iron Mountain,Other Specialized REITs
+JBHT,NYSE/NASDAQ,USD,263,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,J.B. Hunt,Cargo Ground Transportation
+SJM,NYSE/NASDAQ,USD,264,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,J.M. Smucker Company (The),Packaged Foods & Meats
+JBL,NYSE/NASDAQ,USD,265,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Jabil,Electronic Manufacturing Services
+JKHY,NYSE/NASDAQ,USD,266,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Jack Henry & Associates,Transaction & Payment Processing Services
+J,NYSE/NASDAQ,USD,267,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Jacobs Solutions,Construction & Engineering
+JNJ,NYSE/NASDAQ,USD,268,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Johnson & Johnson,Pharmaceuticals
+JCI,NYSE/NASDAQ,USD,269,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Johnson Controls,Building Products
+JPM,NYSE/NASDAQ,USD,270,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,JPMorgan Chase,Diversified Banks
+JNPR,NYSE/NASDAQ,USD,271,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Juniper Networks,Communications Equipment
+K,NYSE/NASDAQ,USD,272,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kellanova,Packaged Foods & Meats
+KVUE,NYSE/NASDAQ,USD,273,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kenvue,Personal Care Products
+KDP,NYSE/NASDAQ,USD,274,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Keurig Dr Pepper,Soft Drinks & Non-alcoholic Beverages
+KEY,NYSE/NASDAQ,USD,275,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,KeyCorp,Regional Banks
+KEYS,NYSE/NASDAQ,USD,276,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Keysight Technologies,Electronic Equipment & Instruments
+KMB,NYSE/NASDAQ,USD,277,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kimberly-Clark,Household Products
+KIM,NYSE/NASDAQ,USD,278,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kimco Realty,Retail REITs
+KMI,NYSE/NASDAQ,USD,279,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kinder Morgan,Oil & Gas Storage & Transportation
+KKR,NYSE/NASDAQ,USD,280,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,KKR,Asset Management & Custody Banks
+KLAC,NYSE/NASDAQ,USD,281,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,KLA Corporation,Semiconductor Materials & Equipment
+KHC,NYSE/NASDAQ,USD,282,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kraft Heinz,Packaged Foods & Meats
+KR,NYSE/NASDAQ,USD,283,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Kroger,Food Retail
+LHX,NYSE/NASDAQ,USD,284,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,L3Harris,Aerospace & Defense
+LH,NYSE/NASDAQ,USD,285,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,LabCorp,Health Care Services
+LRCX,NYSE/NASDAQ,USD,286,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lam Research,Semiconductor Materials & Equipment
+LW,NYSE/NASDAQ,USD,287,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lamb Weston,Packaged Foods & Meats
+LVS,NYSE/NASDAQ,USD,288,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Las Vegas Sands,Casinos & Gaming
+LDOS,NYSE/NASDAQ,USD,289,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Leidos,Diversified Support Services
+LEN,NYSE/NASDAQ,USD,290,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lennar,Homebuilding
+LLY,NYSE/NASDAQ,USD,291,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lilly (Eli),Pharmaceuticals
+LIN,NYSE/NASDAQ,USD,292,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Linde plc,Industrial Gases
+LYV,NYSE/NASDAQ,USD,293,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Live Nation Entertainment,Movies & Entertainment
+LKQ,NYSE/NASDAQ,USD,294,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,LKQ Corporation,Distributors
+LMT,NYSE/NASDAQ,USD,295,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lockheed Martin,Aerospace & Defense
+L,NYSE/NASDAQ,USD,296,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Loews Corporation,Multi-line Insurance
+LOW,NYSE/NASDAQ,USD,297,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lowe's,Home Improvement Retail
+LULU,NYSE/NASDAQ,USD,298,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Lululemon Athletica,"Apparel, Accessories & Luxury Goods"
+LYB,NYSE/NASDAQ,USD,299,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,LyondellBasell,Specialty Chemicals
+MTB,NYSE/NASDAQ,USD,300,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,M&T Bank,Regional Banks
+MRO,NYSE/NASDAQ,USD,301,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Marathon Oil,Oil & Gas Exploration & Production
+MPC,NYSE/NASDAQ,USD,302,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Marathon Petroleum,Oil & Gas Refining & Marketing
+MKTX,NYSE/NASDAQ,USD,303,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,MarketAxess,Financial Exchanges & Data
+MAR,NYSE/NASDAQ,USD,304,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Marriott International,"Hotels, Resorts & Cruise Lines"
+MMC,NYSE/NASDAQ,USD,305,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Marsh McLennan,Insurance Brokers
+MLM,NYSE/NASDAQ,USD,306,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Martin Marietta Materials,Construction Materials
+MAS,NYSE/NASDAQ,USD,307,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Masco,Building Products
+MA,NYSE/NASDAQ,USD,308,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Mastercard,Transaction & Payment Processing Services
+MTCH,NYSE/NASDAQ,USD,309,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Match Group,Interactive Media & Services
+MKC,NYSE/NASDAQ,USD,310,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,McCormick & Company,Packaged Foods & Meats
+MCD,NYSE/NASDAQ,USD,311,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,McDonald's,Restaurants
+MCK,NYSE/NASDAQ,USD,312,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,McKesson Corporation,Health Care Distributors
+MDT,NYSE/NASDAQ,USD,313,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Medtronic,Health Care Equipment
+MRK,NYSE/NASDAQ,USD,314,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Merck & Co.,Pharmaceuticals
+META,NYSE/NASDAQ,USD,315,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Meta Platforms,Interactive Media & Services
+MET,NYSE/NASDAQ,USD,316,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,MetLife,Life & Health Insurance
+MTD,NYSE/NASDAQ,USD,317,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Mettler Toledo,Life Sciences Tools & Services
+MGM,NYSE/NASDAQ,USD,318,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,MGM Resorts,Casinos & Gaming
+MCHP,NYSE/NASDAQ,USD,319,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Microchip Technology,Semiconductors
+MU,NYSE/NASDAQ,USD,320,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Micron Technology,Semiconductors
+MSFT,NYSE/NASDAQ,USD,321,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Microsoft,Systems Software
+MAA,NYSE/NASDAQ,USD,322,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Mid-America Apartment Communities,Multi-Family Residential REITs
+MRNA,NYSE/NASDAQ,USD,323,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Moderna,Biotechnology
+MHK,NYSE/NASDAQ,USD,324,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Mohawk Industries,Home Furnishings
+MOH,NYSE/NASDAQ,USD,325,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Molina Healthcare,Managed Health Care
+TAP,NYSE/NASDAQ,USD,326,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Molson Coors Beverage Company,Brewers
+MDLZ,NYSE/NASDAQ,USD,327,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Mondelez International,Packaged Foods & Meats
+MPWR,NYSE/NASDAQ,USD,328,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Monolithic Power Systems,Semiconductors
+MNST,NYSE/NASDAQ,USD,329,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Monster Beverage,Soft Drinks & Non-alcoholic Beverages
+MCO,NYSE/NASDAQ,USD,330,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Moody's Corporation,Financial Exchanges & Data
+MS,NYSE/NASDAQ,USD,331,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Morgan Stanley,Investment Banking & Brokerage
+MOS,NYSE/NASDAQ,USD,332,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Mosaic Company (The),Fertilizers & Agricultural Chemicals
+MSI,NYSE/NASDAQ,USD,333,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Motorola Solutions,Communications Equipment
+MSCI,NYSE/NASDAQ,USD,334,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,MSCI,Financial Exchanges & Data
+NDAQ,NYSE/NASDAQ,USD,335,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"Nasdaq, Inc.",Financial Exchanges & Data
+NTAP,NYSE/NASDAQ,USD,336,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,NetApp,"Technology Hardware, Storage & Peripherals"
+NFLX,NYSE/NASDAQ,USD,337,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Netflix,Movies & Entertainment
+NEM,NYSE/NASDAQ,USD,338,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Newmont,Gold
+NWSA,NYSE/NASDAQ,USD,339,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,News Corp (Class A),Publishing
+NWS,NYSE/NASDAQ,USD,340,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,News Corp (Class B),Publishing
+NEE,NYSE/NASDAQ,USD,341,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,NextEra Energy,Multi-Utilities
+NKE,NYSE/NASDAQ,USD,342,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"Nike, Inc.","Apparel, Accessories & Luxury Goods"
+NI,NYSE/NASDAQ,USD,343,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,NiSource,Multi-Utilities
+NDSN,NYSE/NASDAQ,USD,344,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Nordson Corporation,Industrial Machinery & Supplies & Components
+NSC,NYSE/NASDAQ,USD,345,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Norfolk Southern Railway,Rail Transportation
+NTRS,NYSE/NASDAQ,USD,346,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Northern Trust,Asset Management & Custody Banks
+NOC,NYSE/NASDAQ,USD,347,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Northrop Grumman,Aerospace & Defense
+NCLH,NYSE/NASDAQ,USD,348,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Norwegian Cruise Line Holdings,"Hotels, Resorts & Cruise Lines"
+NRG,NYSE/NASDAQ,USD,349,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,NRG Energy,Independent Power Producers & Energy Traders
+NUE,NYSE/NASDAQ,USD,350,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Nucor,Steel
+NVDA,NYSE/NASDAQ,USD,351,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Nvidia,Semiconductors
+NVR,NYSE/NASDAQ,USD,352,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"NVR, Inc.",Homebuilding
+NXPI,NYSE/NASDAQ,USD,353,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,NXP Semiconductors,Semiconductors
+ORLY,NYSE/NASDAQ,USD,354,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,O'Reilly Auto Parts,Automotive Retail
+OXY,NYSE/NASDAQ,USD,355,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Occidental Petroleum,Oil & Gas Exploration & Production
+ODFL,NYSE/NASDAQ,USD,356,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Old Dominion,Cargo Ground Transportation
+OMC,NYSE/NASDAQ,USD,357,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Omnicom Group,Advertising
+ON,NYSE/NASDAQ,USD,358,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,ON Semiconductor,Semiconductors
+OKE,NYSE/NASDAQ,USD,359,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,ONEOK,Oil & Gas Storage & Transportation
+ORCL,NYSE/NASDAQ,USD,360,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Oracle Corporation,Application Software
+OTIS,NYSE/NASDAQ,USD,361,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Otis Worldwide,Industrial Machinery & Supplies & Components
+PCAR,NYSE/NASDAQ,USD,362,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Paccar,Construction Machinery & Heavy Transportation Equipment
+PKG,NYSE/NASDAQ,USD,363,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Packaging Corporation of America,Paper & Plastic Packaging Products & Materials
+PLTR,NYSE/NASDAQ,USD,364,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Palantir Technologies,Internet Services & Infrastructure
+PANW,NYSE/NASDAQ,USD,365,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Palo Alto Networks,Systems Software
+PARA,NYSE/NASDAQ,USD,366,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Paramount Global,Movies & Entertainment
+PH,NYSE/NASDAQ,USD,367,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Parker Hannifin,Industrial Machinery & Supplies & Components
+PAYX,NYSE/NASDAQ,USD,368,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Paychex,Human Resource & Employment Services
+PAYC,NYSE/NASDAQ,USD,369,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Paycom,Human Resource & Employment Services
+PYPL,NYSE/NASDAQ,USD,370,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PayPal,Transaction & Payment Processing Services
+PNR,NYSE/NASDAQ,USD,371,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Pentair,Industrial Machinery & Supplies & Components
+PEP,NYSE/NASDAQ,USD,372,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PepsiCo,Soft Drinks & Non-alcoholic Beverages
+PFE,NYSE/NASDAQ,USD,373,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Pfizer,Pharmaceuticals
+PCG,NYSE/NASDAQ,USD,374,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PG&E Corporation,Multi-Utilities
+PM,NYSE/NASDAQ,USD,375,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Philip Morris International,Tobacco
+PSX,NYSE/NASDAQ,USD,376,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Phillips 66,Oil & Gas Refining & Marketing
+PNW,NYSE/NASDAQ,USD,377,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Pinnacle West,Multi-Utilities
+PNC,NYSE/NASDAQ,USD,378,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PNC Financial Services,Diversified Banks
+POOL,NYSE/NASDAQ,USD,379,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Pool Corporation,Distributors
+PPG,NYSE/NASDAQ,USD,380,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PPG Industries,Specialty Chemicals
+PPL,NYSE/NASDAQ,USD,381,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PPL Corporation,Electric Utilities
+PFG,NYSE/NASDAQ,USD,382,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Principal Financial Group,Life & Health Insurance
+PG,NYSE/NASDAQ,USD,383,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Procter & Gamble,Personal Care Products
+PGR,NYSE/NASDAQ,USD,384,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Progressive Corporation,Property & Casualty Insurance
+PLD,NYSE/NASDAQ,USD,385,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Prologis,Industrial REITs
+PRU,NYSE/NASDAQ,USD,386,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Prudential Financial,Life & Health Insurance
+PTC,NYSE/NASDAQ,USD,387,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PTC Inc.,Application Software
+PEG,NYSE/NASDAQ,USD,388,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Public Service Enterprise Group,Electric Utilities
+PSA,NYSE/NASDAQ,USD,389,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Public Storage,Self-Storage REITs
+PHM,NYSE/NASDAQ,USD,390,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,PulteGroup,Homebuilding
+QRVO,NYSE/NASDAQ,USD,391,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Qorvo,Semiconductors
+QCOM,NYSE/NASDAQ,USD,392,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Qualcomm,Semiconductors
+PWR,NYSE/NASDAQ,USD,393,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Quanta Services,Construction & Engineering
+DGX,NYSE/NASDAQ,USD,394,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Quest Diagnostics,Health Care Services
+RL,NYSE/NASDAQ,USD,395,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ralph Lauren Corporation,"Apparel, Accessories & Luxury Goods"
+RJF,NYSE/NASDAQ,USD,396,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Raymond James Financial,Investment Banking & Brokerage
+O,NYSE/NASDAQ,USD,397,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Realty Income,Retail REITs
+REG,NYSE/NASDAQ,USD,398,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Regency Centers,Retail REITs
+REGN,NYSE/NASDAQ,USD,399,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Regeneron Pharmaceuticals,Biotechnology
+RF,NYSE/NASDAQ,USD,400,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Regions Financial Corporation,Regional Banks
+RSG,NYSE/NASDAQ,USD,401,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Republic Services,Environmental & Facilities Services
+RMD,NYSE/NASDAQ,USD,402,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,ResMed,Health Care Equipment
+RVTY,NYSE/NASDAQ,USD,403,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Revvity,Health Care Equipment
+ROK,NYSE/NASDAQ,USD,404,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Rockwell Automation,Electrical Components & Equipment
+ROL,NYSE/NASDAQ,USD,405,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"Rollins, Inc.",Environmental & Facilities Services
+ROP,NYSE/NASDAQ,USD,406,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Roper Technologies,Electronic Equipment & Instruments
+ROST,NYSE/NASDAQ,USD,407,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ross Stores,Apparel Retail
+RCL,NYSE/NASDAQ,USD,408,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Royal Caribbean Group,"Hotels, Resorts & Cruise Lines"
+RTX,NYSE/NASDAQ,USD,409,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,RTX Corporation,Aerospace & Defense
+SPGI,NYSE/NASDAQ,USD,410,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,S&P Global,Financial Exchanges & Data
+CRM,NYSE/NASDAQ,USD,411,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Salesforce,Application Software
+SBAC,NYSE/NASDAQ,USD,412,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,SBA Communications,Telecom Tower REITs
+SLB,NYSE/NASDAQ,USD,413,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Schlumberger,Oil & Gas Equipment & Services
+STX,NYSE/NASDAQ,USD,414,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Seagate Technology,"Technology Hardware, Storage & Peripherals"
+SRE,NYSE/NASDAQ,USD,415,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Sempra,Multi-Utilities
+NOW,NYSE/NASDAQ,USD,416,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,ServiceNow,Systems Software
+SHW,NYSE/NASDAQ,USD,417,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Sherwin-Williams,Specialty Chemicals
+SPG,NYSE/NASDAQ,USD,418,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Simon Property Group,Retail REITs
+SWKS,NYSE/NASDAQ,USD,419,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Skyworks Solutions,Semiconductors
+SW,NYSE/NASDAQ,USD,420,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Smurfit WestRock,Paper & Plastic Packaging Products & Materials
+SNA,NYSE/NASDAQ,USD,421,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Snap-on,Industrial Machinery & Supplies & Components
+SOLV,NYSE/NASDAQ,USD,422,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Solventum,Health Care Technology
+SO,NYSE/NASDAQ,USD,423,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Southern Company,Electric Utilities
+LUV,NYSE/NASDAQ,USD,424,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Southwest Airlines,Passenger Airlines
+SWK,NYSE/NASDAQ,USD,425,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Stanley Black & Decker,Industrial Machinery & Supplies & Components
+SBUX,NYSE/NASDAQ,USD,426,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Starbucks,Restaurants
+STT,NYSE/NASDAQ,USD,427,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,State Street Corporation,Asset Management & Custody Banks
+STLD,NYSE/NASDAQ,USD,428,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Steel Dynamics,Steel
+STE,NYSE/NASDAQ,USD,429,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Steris,Health Care Equipment
+SYK,NYSE/NASDAQ,USD,430,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Stryker Corporation,Health Care Equipment
+SMCI,NYSE/NASDAQ,USD,431,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Supermicro,"Technology Hardware, Storage & Peripherals"
+SYF,NYSE/NASDAQ,USD,432,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Synchrony Financial,Consumer Finance
+SNPS,NYSE/NASDAQ,USD,433,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Synopsys,Application Software
+SYY,NYSE/NASDAQ,USD,434,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Sysco,Food Distributors
+TMUS,NYSE/NASDAQ,USD,435,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,T-Mobile US,Wireless Telecommunication Services
+TROW,NYSE/NASDAQ,USD,436,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,T. Rowe Price,Asset Management & Custody Banks
+TTWO,NYSE/NASDAQ,USD,437,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Take-Two Interactive,Interactive Home Entertainment
+TPR,NYSE/NASDAQ,USD,438,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"Tapestry, Inc.","Apparel, Accessories & Luxury Goods"
+TRGP,NYSE/NASDAQ,USD,439,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Targa Resources,Oil & Gas Storage & Transportation
+TGT,NYSE/NASDAQ,USD,440,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Target Corporation,Consumer Staples Merchandise Retail
+TEL,NYSE/NASDAQ,USD,441,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,TE Connectivity,Electronic Manufacturing Services
+TDY,NYSE/NASDAQ,USD,442,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Teledyne Technologies,Electronic Equipment & Instruments
+TFX,NYSE/NASDAQ,USD,443,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Teleflex,Health Care Equipment
+TER,NYSE/NASDAQ,USD,444,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Teradyne,Semiconductor Materials & Equipment
+TSLA,NYSE/NASDAQ,USD,445,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"Tesla, Inc.",Automobile Manufacturers
+TXN,NYSE/NASDAQ,USD,446,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Texas Instruments,Semiconductors
+TXT,NYSE/NASDAQ,USD,447,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Textron,Aerospace & Defense
+TMO,NYSE/NASDAQ,USD,448,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Thermo Fisher Scientific,Life Sciences Tools & Services
+TJX,NYSE/NASDAQ,USD,449,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,TJX Companies,Apparel Retail
+TSCO,NYSE/NASDAQ,USD,450,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Tractor Supply,Other Specialty Retail
+TT,NYSE/NASDAQ,USD,451,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Trane Technologies,Building Products
+TDG,NYSE/NASDAQ,USD,452,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,TransDigm Group,Aerospace & Defense
+TRV,NYSE/NASDAQ,USD,453,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Travelers Companies (The),Property & Casualty Insurance
+TRMB,NYSE/NASDAQ,USD,454,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Trimble Inc.,Electronic Equipment & Instruments
+TFC,NYSE/NASDAQ,USD,455,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Truist Financial,Diversified Banks
+TYL,NYSE/NASDAQ,USD,456,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Tyler Technologies,Application Software
+TSN,NYSE/NASDAQ,USD,457,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Tyson Foods,Packaged Foods & Meats
+USB,NYSE/NASDAQ,USD,458,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,U.S. Bancorp,Diversified Banks
+UBER,NYSE/NASDAQ,USD,459,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Uber,Passenger Ground Transportation
+UDR,NYSE/NASDAQ,USD,460,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,"UDR, Inc.",Multi-Family Residential REITs
+ULTA,NYSE/NASDAQ,USD,461,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ulta Beauty,Other Specialty Retail
+UNP,NYSE/NASDAQ,USD,462,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Union Pacific Corporation,Rail Transportation
+UAL,NYSE/NASDAQ,USD,463,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,United Airlines Holdings,Passenger Airlines
+UPS,NYSE/NASDAQ,USD,464,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,United Parcel Service,Air Freight & Logistics
+URI,NYSE/NASDAQ,USD,465,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,United Rentals,Trading Companies & Distributors
+UNH,NYSE/NASDAQ,USD,466,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,UnitedHealth Group,Managed Health Care
+UHS,NYSE/NASDAQ,USD,467,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Universal Health Services,Health Care Facilities
+VLO,NYSE/NASDAQ,USD,468,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Valero Energy,Oil & Gas Refining & Marketing
+VTR,NYSE/NASDAQ,USD,469,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Ventas,Health Care REITs
+VLTO,NYSE/NASDAQ,USD,470,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Veralto,Environmental & Facilities Services
+VRSN,NYSE/NASDAQ,USD,471,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Verisign,Internet Services & Infrastructure
+VRSK,NYSE/NASDAQ,USD,472,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Verisk Analytics,Research & Consulting Services
+VZ,NYSE/NASDAQ,USD,473,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Verizon,Integrated Telecommunication Services
+VRTX,NYSE/NASDAQ,USD,474,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Vertex Pharmaceuticals,Biotechnology
+VTRS,NYSE/NASDAQ,USD,475,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Viatris,Pharmaceuticals
+VICI,NYSE/NASDAQ,USD,476,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Vici Properties,Hotel & Resort REITs
+V,NYSE/NASDAQ,USD,477,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Visa Inc.,Transaction & Payment Processing Services
+VST,NYSE/NASDAQ,USD,478,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Vistra Corp.,Electric Utilities
+VMC,NYSE/NASDAQ,USD,479,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Vulcan Materials Company,Construction Materials
+WRB,NYSE/NASDAQ,USD,480,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,W. R. Berkley Corporation,Property & Casualty Insurance
+GWW,NYSE/NASDAQ,USD,481,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,W. W. Grainger,Industrial Machinery & Supplies & Components
+WAB,NYSE/NASDAQ,USD,482,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Wabtec,Construction Machinery & Heavy Transportation Equipment
+WBA,NYSE/NASDAQ,USD,483,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Walgreens Boots Alliance,Drug Retail
+WMT,NYSE/NASDAQ,USD,484,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Walmart,Consumer Staples Merchandise Retail
+DIS,NYSE/NASDAQ,USD,485,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Walt Disney Company (The),Movies & Entertainment
+WBD,NYSE/NASDAQ,USD,486,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Warner Bros. Discovery,Broadcasting
+WM,NYSE/NASDAQ,USD,487,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Waste Management,Environmental & Facilities Services
+WAT,NYSE/NASDAQ,USD,488,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Waters Corporation,Life Sciences Tools & Services
+WEC,NYSE/NASDAQ,USD,489,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,WEC Energy Group,Electric Utilities
+WFC,NYSE/NASDAQ,USD,490,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Wells Fargo,Diversified Banks
+WELL,NYSE/NASDAQ,USD,491,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Welltower,Health Care REITs
+WST,NYSE/NASDAQ,USD,492,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,West Pharmaceutical Services,Health Care Supplies
+WDC,NYSE/NASDAQ,USD,493,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Western Digital,"Technology Hardware, Storage & Peripherals"
+WY,NYSE/NASDAQ,USD,494,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Weyerhaeuser,Timber REITs
+WMB,NYSE/NASDAQ,USD,495,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Williams Companies,Oil & Gas Storage & Transportation
+WTW,NYSE/NASDAQ,USD,496,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Willis Towers Watson,Insurance Brokers
+WYNN,NYSE/NASDAQ,USD,497,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Wynn Resorts,Casinos & Gaming
+XEL,NYSE/NASDAQ,USD,498,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Xcel Energy,Multi-Utilities
+XYL,NYSE/NASDAQ,USD,499,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Xylem Inc.,Industrial Machinery & Supplies & Components
+YUM,NYSE/NASDAQ,USD,500,https://datahub.io/core/s-and-p-500-companies-financials/_r/-/data/constituents.csv,2026-05-19 22:55:20,Yum! Brands,Restaurants

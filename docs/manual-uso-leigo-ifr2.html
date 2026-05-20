@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual do Usuário Leigo - IFR2 Miner & Screener</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --primary: #1d4ed8;
+      --ok-bg: #ecfdf3;
+      --ok-line: #10b981;
+      --warn-bg: #fff7ed;
+      --warn-line: #f59e0b;
+      --bad-bg: #fef2f2;
+      --bad-line: #ef4444;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 24px auto;
+      padding: 0 16px 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 4px;
+      font-size: 22px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      margin-top: 18px;
+      font-size: 18px;
+    }
+
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .toc li { margin: 6px 0; }
+
+    .callout {
+      border-left: 5px solid var(--line);
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 12px 0;
+    }
+
+    .ok {
+      background: var(--ok-bg);
+      border-left-color: var(--ok-line);
+    }
+
+    .warn {
+      background: var(--warn-bg);
+      border-left-color: var(--warn-line);
+    }
+
+    .bad {
+      background: var(--bad-bg);
+      border-left-color: var(--bad-line);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 16px;
+      font-size: 15px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f9fafb;
+      color: #111827;
+    }
+
+    code {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 2px 6px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
+    }
+
+    .steps li { margin-bottom: 8px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+    }
+
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      background: #fcfdff;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Manual do usuário leigo (HTML)<br>IFR2 Miner & Screener</h1>
+      <p class="muted">Objetivo: te mostrar, sem linguagem técnica, como consultar o app, o que consultar e quando consultar.</p>
+
+      <div class="callout warn">
+        Este app é para análise. Ele não compra e não vende ações por você.
+      </div>
+    </div>
+
+    <div class="card toc">
+      <h2>Sumário</h2>
+      <ol>
+        <li><a href="#acesso">Como acessar o app</a></li>
+        <li><a href="#visao-geral">Visão geral da tela</a></li>
+        <li><a href="#como-consultar">Como consultar (passo a passo)</a></li>
+        <li><a href="#o-que-consultar">O que consultar na tabela</a></li>
+        <li><a href="#quando-consultar">Quando consultar (rotina prática)</a></li>
+        <li><a href="#garimpo">Como usar "O Garimpo"</a></li>
+        <li><a href="#checklist">Checklist simples antes de decidir</a></li>
+        <li><a href="#erros">Erros comuns e como evitar</a></li>
+        <li><a href="#faq">Perguntas frequentes</a></li>
+      </ol>
+    </div>
+
+    <div class="card" id="acesso">
+      <h2>1) Como acessar o app</h2>
+      <ol class="steps">
+        <li>Abra o navegador no computador onde o app está rodando.</li>
+        <li>Entre em: <code>http://localhost:8501</code></li>
+        <li>Você verá duas abas principais: <strong>Screener Diário</strong> e <strong>O Garimpo (Mining)</strong>.</li>
+      </ol>
+    </div>
+
+    <div class="card" id="visao-geral">
+      <h2>2) Visão geral da tela (lado esquerdo e centro)</h2>
+
+      <h3>Lado esquerdo (sidebar)</h3>
+      <ul>
+        <li><strong>Mercado:</strong> B3, NYSE/NASDAQ, ou Ambos.</li>
+        <li><strong>Cesta de ativos:</strong> lista pronta (snapshot) ou lista customizada.</li>
+        <li><strong>Selecione/Filtre os ativos:</strong> escolhe quais ativos entram na análise.</li>
+        <li><strong>Threshold IFR2 de Compra:</strong> sensibilidade do sinal (mais baixo = mais seletivo).</li>
+        <li><strong>Volume mínimo:</strong> remove ativos com pouca liquidez.</li>
+        <li><strong>Período histórico:</strong> 1y, 2y, 3y, 5y.</li>
+      </ul>
+
+      <h3>Centro da tela</h3>
+      <ul>
+        <li><strong>Aba Screener Diário:</strong> busca oportunidades atuais.</li>
+        <li><strong>Aba O Garimpo:</strong> compara desempenho histórico da estratégia em vários ativos.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="como-consultar">
+      <h2>3) Como consultar (passo a passo)</h2>
+
+      <h3>Consulta rápida do dia (Screener Diário)</h3>
+      <ol class="steps">
+        <li>Escolha o <strong>Mercado</strong> (ex.: B3).</li>
+        <li>Escolha a <strong>Cesta</strong> (para começar, use a lista pronta/snapshot).</li>
+        <li>Deixe o <strong>IFR2</strong> no padrão inicial (ou ajuste com cuidado).</li>
+        <li>Defina o <strong>Volume mínimo</strong> para evitar ativos sem liquidez.</li>
+        <li>Clique em <strong>Executar Varredura</strong>.</li>
+        <li>Analise a tabela final e procure por <strong>Sinal = COMPRA!</strong>.</li>
+      </ol>
+
+      <div class="callout ok">
+        Para quem está começando: mude poucos parâmetros por vez. Assim você entende o impacto de cada ajuste.
+      </div>
+    </div>
+
+    <div class="card" id="o-que-consultar">
+      <h2>4) O que consultar na tabela (e como ler)</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Coluna</th>
+            <th>O que significa (linguagem simples)</th>
+            <th>Como usar na prática</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ticker</td>
+            <td>Código da ação.</td>
+            <td>Confirme se é o ativo que você realmente quer analisar.</td>
+          </tr>
+          <tr>
+            <td>Preço</td>
+            <td>Preço atual/mais recente.</td>
+            <td>Serve de referência para acompanhar o papel.</td>
+          </tr>
+          <tr>
+            <td>IFR2</td>
+            <td>Indicador de curto prazo. Quanto menor, mais "esticado para baixo".</td>
+            <td>Se estiver abaixo do seu limite, pode indicar ponto de atenção para entrada.</td>
+          </tr>
+          <tr>
+            <td>Acima SMA200</td>
+            <td>Diz se está em tendência de alta no longo prazo.</td>
+            <td>"Sim" costuma filtrar ativos mais alinhados com tendência.</td>
+          </tr>
+          <tr>
+            <td>Vol Fin Médio</td>
+            <td>Liquidez média (dinheiro negociado).</td>
+            <td>Prefira ativos com liquidez maior para reduzir dificuldade de entrada/saída.</td>
+          </tr>
+          <tr>
+            <td>Sinal</td>
+            <td>Resultado final do filtro.</td>
+            <td><strong>COMPRA!</strong> = passou nos critérios do app. <strong>Neutro</strong> = não passou.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout warn">
+        "COMPRA!" no app significa "passou no filtro da estratégia". Não significa "compra obrigatória".
+      </div>
+    </div>
+
+    <div class="card" id="quando-consultar">
+      <h2>5) Quando consultar (rotina prática)</h2>
+
+      <div class="grid">
+        <div class="mini">
+          <h3>Rotina diária (simples)</h3>
+          <ul>
+            <li>1 consulta após a abertura do mercado.</li>
+            <li>1 consulta perto do fechamento.</li>
+            <li>Se não houver sinal, não force operação.</li>
+          </ul>
+        </div>
+
+        <div class="mini">
+          <h3>Rotina semanal</h3>
+          <ul>
+            <li>Use "O Garimpo" 1 vez por semana.</li>
+            <li>Compare quais ativos tiveram melhor consistência histórica.</li>
+            <li>Ajuste sua lista de acompanhamento.</li>
+          </ul>
+        </div>
+
+        <div class="mini">
+          <h3>Rotina mensal</h3>
+          <ul>
+            <li>Revisar parâmetros (IFR2 e liquidez).</li>
+            <li>Conferir se os ativos da cesta continuam fazendo sentido.</li>
+            <li>Evitar mudanças grandes sem testar antes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Quando NÃO consultar para decidir correndo</h3>
+      <ul>
+        <li>Logo após notícia muito forte sem confirmação de contexto.</li>
+        <li>Quando você alterou muitos parâmetros de uma vez e ainda não entendeu o resultado.</li>
+        <li>Quando o ativo tem liquidez fraca e spread alto.</li>
+      </ul>
+    </div>
+
+    <div class="card" id="garimpo">
+      <h2>6) Como usar "O Garimpo" (modo comparação histórica)</h2>
+      <ol class="steps">
+        <li>Configure mercado, ativos e período histórico (de preferência 2y ou mais).</li>
+        <li>Clique em <strong>Iniciar Mineração</strong>.</li>
+        <li>Veja o ranking por <strong>Alpha %</strong> (diferença da estratégia vs buy & hold).</li>
+        <li>Olhe também <strong>Win Rate</strong>, <strong>Profit Factor</strong> e <strong>Trades</strong>.</li>
+      </ol>
+
+      <div class="callout ok">
+        Use o Garimpo para "escolher terreno" (quais ativos vale monitorar), e o Screener Diário para "timing" (quando o ativo entra no filtro).
+      </div>
+    </div>
+
+    <div class="card" id="checklist">
+      <h2>7) Checklist simples antes de decidir</h2>
+      <ol class="steps">
+        <li>O ativo apareceu com <strong>Sinal = COMPRA!</strong>?</li>
+        <li>Está com <strong>Acima SMA200 = Sim</strong>?</li>
+        <li>Liquidez está adequada no seu padrão?</li>
+        <li>Você já verificou notícia/evento relevante do ativo?</li>
+        <li>Você já definiu limite de risco (quanto aceita perder)?</li>
+      </ol>
+
+      <div class="callout bad">
+        Nunca decida só por 1 número. Use o sinal + contexto + gestão de risco.
+      </div>
+    </div>
+
+    <div class="card" id="erros">
+      <h2>8) Erros comuns e como evitar</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Erro comum</th>
+            <th>Como evitar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mudar vários parâmetros ao mesmo tempo</td>
+            <td>Altere 1 parâmetro por vez e compare o resultado.</td>
+          </tr>
+          <tr>
+            <td>Ignorar liquidez</td>
+            <td>Mantenha filtro de volume mínimo ativo.</td>
+          </tr>
+          <tr>
+            <td>Operar qualquer "COMPRA!" sem contexto</td>
+            <td>Confirme cenário do ativo e risco antes de agir.</td>
+          </tr>
+          <tr>
+            <td>Usar lista enorme logo no início</td>
+            <td>Comece com uma lista menor e vá ampliando.</td>
+          </tr>
+          <tr>
+            <td>Esperar acerto em 100% dos sinais</td>
+            <td>Pense em probabilidade e consistência ao longo do tempo.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" id="faq">
+      <h2>9) Perguntas frequentes</h2>
+
+      <h3>O app diz "Nenhum resultado encontrado". Está quebrado?</h3>
+      <p>Geralmente não. Significa que, naquele momento, nenhum ativo passou nos filtros definidos.</p>
+
+      <h3>Preciso usar B3 e EUA juntos?</h3>
+      <p>Não. Pode começar por um mercado só, para aprender com mais clareza.</p>
+
+      <h3>Qual período histórico usar?</h3>
+      <p>Para começar, use 2y. Depois compare com 1y e 3y para ver estabilidade do comportamento.</p>
+
+      <h3>IFR2 menor sempre é melhor?</h3>
+      <p>Não necessariamente. IFR2 muito baixo pode vir com volatilidade maior. Por isso o filtro de tendência e liquidez existe.</p>
+
+      <h3>Este app garante lucro?</h3>
+      <p>Não. Ele melhora a disciplina da análise, mas mercado sempre tem risco.</p>
+    </div>
+
+    <div class="card">
+      <h2>Resumo final (em 20 segundos)</h2>
+      <ul>
+        <li>Use <strong>Screener Diário</strong> para encontrar ativos no filtro hoje.</li>
+        <li>Use <strong>O Garimpo</strong> para comparar histórico e priorizar ativos.</li>
+        <li>Consulte em rotina (abertura/fechamento), sem pressa e sem excesso de mudanças.</li>
+        <li>Use sinal como apoio, não como decisão automática.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Manual leigo em HTML para o IFR2 Miner & Screener.
+    </div>
+  </div>
+</body>
+</html>

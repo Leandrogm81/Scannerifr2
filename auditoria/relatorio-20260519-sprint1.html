@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de Auditoria - IFR2 - Sprint 01</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        h1, h2, h3 {
+            color: #58a6ff;
+        }
+        h1 {
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .meta-box {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .meta-item {
+            flex: 1;
+            min-width: 200px;
+            margin: 5px 0;
+        }
+        .meta-label {
+            font-weight: bold;
+            color: #8b949e;
+        }
+        .meta-value {
+            font-size: 1.1em;
+            color: #f0f6fc;
+        }
+        .score-badge {
+            display: inline-block;
+            background-color: #2ea043;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: #1f6feb;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .severity-critico {
+            color: #f85149;
+            font-weight: bold;
+        }
+        .severity-importante {
+            color: #db6d28;
+            font-weight: bold;
+        }
+        .severity-sugestao {
+            color: #8b949e;
+            font-weight: bold;
+        }
+        .category-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .category-title {
+            font-size: 1.3em;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 8px;
+            margin-top: 0;
+            color: #58a6ff;
+        }
+        .findings-list {
+            margin-top: 15px;
+        }
+        .finding-item {
+            background-color: #21262d;
+            border-left: 4px solid #30363d;
+            border-radius: 0 6px 6px 0;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+        }
+        .finding-item.critico {
+            border-left-color: #f85149;
+        }
+        .finding-item.importante {
+            border-left-color: #db6d28;
+        }
+        .finding-item.sugestao {
+            border-left-color: #8b949e;
+        }
+        .finding-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 6px;
+        }
+        .finding-details {
+            margin: 5px 0;
+            font-size: 0.95em;
+            color: #c9d1d9;
+        }
+        .finding-solution {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #30363d;
+            font-size: 0.9em;
+            color: #8b949e;
+        }
+        .footer {
+            margin-top: 30px;
+            border-top: 1px solid #30363d;
+            padding-top: 20px;
+            font-size: 0.9em;
+            color: #8b949e;
+            text-align: center;
+        }
+        .green-text {
+            color: #56d364;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Auditoria Visual - Sprint 01</h1>
+        
+        <div class="meta-box">
+            <div class="meta-item">
+                <span class="meta-label">Projeto:</span><br>
+                <span class="meta-value">IFR2 Miner & Screener</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Fase / Sprint:</span><br>
+                <span class="meta-value">Sprint 01 - Universe Registry</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Data de Emissão:</span><br>
+                <span class="meta-value">19 de Maio de 2026</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Score de Qualidade:</span><br>
+                <span class="score-badge">95 / 100</span>
+            </div>
+            <div class="meta-item">
+                <span class="meta-label">Status do Gate:</span><br>
+                <span class="status-badge" style="background-color: #2ea043;">APROVADO (VERDE)</span>
+            </div>
+        </div>
+
+        <h2>Resumo Executivo</h2>
+        <p>
+            O Sprint 01 foi concluído com absoluto sucesso. O objetivo de criar uma única fonte da verdade e eliminar listas hardcoded de ativos foi totalmente atingido. Os módulos de domínio carregam dinamicamente os 100 ativos mais líquidos da B3 e os 500 ativos do S&P 500 americano de forma resiliente, com suporte a fallbacks e snapshots históricos locais automatizados.
+        </p>
+        <p>
+            Não existem problemas <span class="severity-critico">CRÍTICOS</span> que impeçam a homologação do gate. A base de testes formalizada passou com 100% de sucesso.
+        </p>
+
+        <h2>Resultados da Auditoria por Categoria</h2>
+
+        <!-- Categoria 1: Segurança -->
+        <div class="category-card">
+            <h3 class="category-title">1. Segurança e Integridade</h3>
+            <p><strong>Status:</strong> <span class="green-text">Excelente</span></p>
+            <div class="findings-list">
+                <div class="finding-item sugestao">
+                    <div class="finding-title"><span class="severity-sugestao">SUGESTÃO</span> - Uso de Exceptions no Script de Coleta</div>
+                    <div class="finding-details">
+                        O script de coleta <code>scripts/refresh_universes.py</code> trata erros genéricos para aplicar o fallback local sequencial. Isso é ótimo para estabilidade.
+                    </div>
+                    <div class="finding-solution">
+                        <strong>Solução:</strong> Mantido como está, pois o tratamento está correto e seguro.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 2: Qualidade de Código -->
+        <div class="category-card">
+            <h3 class="category-title">2. Qualidade e Manutenibilidade</h3>
+            <p><strong>Status:</strong> <span class="green-text">Bom (Com observações estéticas para a UI)</span></p>
+            <div class="findings-list">
+                <div class="finding-item importante">
+                    <div class="finding-title"><span class="severity-importante">IMPORTANTE</span> - Imports não utilizados no arquivo de interface legado</div>
+                    <div class="finding-details">
+                        O arquivo principal <code>ifr2_app.py</code> possui vários imports de bibliotecas (como <code>yfinance</code>, <code>numpy</code>, etc) que não estão sendo usados devido à transferência de lógica para os novos módulos.
+                    </div>
+                    <div class="finding-solution">
+                        <strong>Solução:</strong> Corrigir no Sprint 02, quando fizermos a refatoração completa da UI para consumir as novas classes de domínio.
+                    </div>
+                </div>
+                <div class="finding-item sugestao">
+                    <div class="finding-title"><span class="severity-sugestao">SUGESTÃO</span> - Tamanho de arquivo no Registro de Universos</div>
+                    <div class="finding-details">
+                        O arquivo <code>src/universe_registry.py</code> possui 397 linhas de código. É o único arquivo que excede levemente o limite ideal de 300 linhas, porém sua coesão interna é total.
+                    </div>
+                    <div class="finding-solution">
+                        <strong>Solução:</strong> Acompanhar nas próximas sprints. Caso novas watchlists sejam adicionadas, ponderar modularização extra.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categoria 3: Testes -->
+        <div class="category-card">
+            <h3 class="category-title">3. Testes e Cobertura</h3>
+            <p><strong>Status:</strong> <span class="green-text">Excelente (100% Passando)</span></p>
+            <p>
+                A suite de testes pytest em <code>tests/test_universe_registry.py</code> validou completamente a leitura e a escrita do registro, com todos os 5 testes unitários passando. O <code>smoke_test.py</code> e o <code>integration_test.py</code> rodaram limpos no WSL e registraram 100% de sucesso na validação de indicadores e imports.
+            </p>
+        </div>
+
+        <h2>Próximos Passos</h2>
+        <ol>
+            <li><strong>Sinal Verde:</strong> Iniciar imediatamente a implementação do <strong>Sprint 02</strong>.</li>
+            <li><strong>Foco do Sprint 02:</strong> Refatorar a interface Streamlit <code>ifr2_app.py</code> para apontar exclusivamente ao novo registro de universos e garantir pipeline de download robusto e sem duplicação de regras.</li>
+        </ol>
+
+        <div class="footer">
+            <p>Relatório de Auditoria gerado de forma autônoma pelo Hermes Agent em 19 de Maio de 2026.</p>
+        </div>
+    </div>
+</body>
+</html>

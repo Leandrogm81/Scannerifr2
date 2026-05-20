@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Cão de Guarda — IFR2</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:#0f172a; color:#e2e8f0; margin:0; }
+    .wrap { max-width:1100px; margin:0 auto; padding:24px; }
+    .header { background:linear-gradient(135deg,#1e293b,#334155); border:1px solid #475569; border-radius:16px; padding:20px; margin-bottom:16px; }
+    .title { font-size:24px; font-weight:800; margin:0 0 6px; }
+    .sub { color:#94a3b8; font-size:13px; margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px; }
+    .card { background:#1e293b; border:1px solid #475569; border-radius:14px; padding:14px; }
+    .label { color:#94a3b8; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }
+    .value { font-size:28px; font-weight:800; margin-top:6px; }
+    .ok { color:#22c55e; }
+    .warn { color:#f59e0b; }
+    .crit { color:#ef4444; }
+    .skip { color:#60a5fa; }
+    .neutral { color:#e2e8f0; }
+    .badge { display:inline-block; padding:3px 10px; border-radius:999px; font-weight:700; font-size:12px; }
+    .badge.ok { background:#22c55e22; color:#22c55e; border:1px solid #22c55e55; }
+    .badge.warn { background:#f59e0b22; color:#f59e0b; border:1px solid #f59e0b55; }
+    .badge.crit { background:#ef444422; color:#ef4444; border:1px solid #ef444455; }
+    .badge.skip { background:#60a5fa22; color:#60a5fa; border:1px solid #60a5fa55; }
+    .section { background:#111827; border:1px solid #334155; border-radius:16px; padding:16px; margin-bottom:16px; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { text-align:left; vertical-align:top; border-bottom:1px solid #334155; padding:10px; font-size:13px; }
+    th { color:#94a3b8; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }
+    pre { white-space:pre-wrap; word-break:break-word; background:#0f172a; color:#cbd5e1; padding:10px; border-radius:8px; border:1px solid #334155; margin:0; }
+    .muted { color:#94a3b8; }
+    .two-col { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    ul, ol { margin:8px 0 0 20px; }
+    .footer { color:#64748b; font-size:12px; padding:8px 2px 0; }
+    @media (max-width: 900px) { .grid, .two-col { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class='wrap'>
+    <div class='header'>
+      <h1 class='title'>🐕 Cão de Guarda — IFR2 Miner & Screener</h1>
+      <p class='sub'>Fase: fase-manual | Verificação: 2026-05-19 23:13:21 | Branch: desconhecido</p>
+      <p class='sub'>Último commit: sem commits</p>
+    </div>
+
+    <div class='grid'>
+      <div class='card'><div class='label'>Status</div><div class='value'><span class='badge warn'>ATENCAO</span></div></div>
+      <div class='card'><div class='label'>Score</div><div class='value neutral'>72</div></div>
+      <div class='card'><div class='label'>Arquivos</div><div class='value neutral'>13</div></div>
+      <div class='card'><div class='label'>Linhas</div><div class='value neutral'>1580</div></div>
+    </div>
+
+    <div class='grid'>
+      <div class='card'><div class='label'>Broad excepts</div><div class='value warn'>3</div></div>
+      <div class='card'><div class='label'>Bare excepts</div><div class='value ok'>0</div></div>
+      <div class='card'><div class='label'>eval / exec</div><div class='value ok'>0 / 0</div></div>
+      <div class='card'><div class='label'>Cache markers</div><div class='value ok'>4</div></div>
+    </div>
+
+    <div class='section'>
+      <h2>Checks</h2>
+      <table>
+        <thead><tr><th>Check</th><th>Status</th><th>Código</th><th>Comando</th><th>Saída / nota</th></tr></thead>
+        <tbody>
+          
+            <tr>
+              <td>py_compile</td>
+              <td><span class='badge ok'>OK</span></td>
+              <td>0</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python -m py_compile /mnt/c/Dev/IFR2/ifr2_app.py /mnt/c/Dev/IFR2/smoke_test.py /mnt/c/Dev/IFR2/integration_test.py /mnt/c/Dev/IFR2/src/__init__.py /mnt/c/Dev/IFR2/src/backtester.py /mnt/c/Dev/IFR2/src/data_fetcher.py /mnt/c/Dev/IFR2/src/indicators.py /mnt/c/Dev/IFR2/src/risk_manager.py /mnt/c/Dev/IFR2/src/screener.py /mnt/c/Dev/IFR2/src/universe_registry.py /mnt/c/Dev/IFR2/config/__init__.py /mnt/c/Dev/IFR2/config/settings.py /mnt/c/Dev/IFR2/scripts/refresh_universes.py</td>
+              <td><pre>Compilação dos arquivos Python do projeto</pre></td>
+            </tr>
+            
+            <tr>
+              <td>smoke_test</td>
+              <td><span class='badge ok'>OK</span></td>
+              <td>0</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python /mnt/c/Dev/IFR2/smoke_test.py</td>
+              <td><pre>✅ Todos os módulos importados com sucesso!
+✅ Lista de ativos IBOV legado: 18 tickers
+✅ Lista TOP 100 B3: 100 tickers
+✅ Cálculo de indicadores funcionando!
+✅ IFR2 calculado: 100.00
+✅ Position sizing: R$ 2000.00
+
+✅ Smoke test concluído com sucesso!</pre></td>
+            </tr>
+            
+            <tr>
+              <td>integration_test</td>
+              <td><span class='badge ok'>OK</span></td>
+              <td>0</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python /mnt/c/Dev/IFR2/integration_test.py</td>
+              <td><pre>✅ Imports realizados com sucesso!
+✅ Módulos carregados: data_fetcher, indicators, backtester, screener, risk_manager, settings
+  ✅ data_fetcher.get_data existe
+  ✅ data_fetcher.fetch_all_data existe
+  ✅ indicators.calc_indicators existe
+  ✅ backtester.run_backtest existe
+  ✅ screener.screen_tickers existe
+  ✅ risk_manager.calculate_position_size existe
+
+✅ Configurações carregadas:
+   - DEFAULT_RSI_THRESHOLD: 10
+   - DEFAULT_IBOV tem 18 ativos
+   - TOP100_B3 tem 100 ativos
+   - TOP500_US tem 500 ativos
+
+✅ Todas as verificações passaram! A refatoração está coerente.</pre></td>
+            </tr>
+            
+            <tr>
+              <td>pytest</td>
+              <td><span class='badge ok'>OK</span></td>
+              <td>0</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python -m pytest -q</td>
+              <td><pre>........                                                                 [100%]
+8 passed in 13.45s</pre></td>
+            </tr>
+            
+            <tr>
+              <td>pip_check</td>
+              <td><span class='badge ok'>OK</span></td>
+              <td>0</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python -m pip check</td>
+              <td><pre>No broken requirements found.</pre></td>
+            </tr>
+            
+            <tr>
+              <td>flake8</td>
+              <td><span class='badge crit'>FAIL</span></td>
+              <td>1</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python -m flake8 /mnt/c/Dev/IFR2/ifr2_app.py /mnt/c/Dev/IFR2/smoke_test.py /mnt/c/Dev/IFR2/integration_test.py /mnt/c/Dev/IFR2/src/__init__.py /mnt/c/Dev/IFR2/src/backtester.py /mnt/c/Dev/IFR2/src/data_fetcher.py /mnt/c/Dev/IFR2/src/indicators.py /mnt/c/Dev/IFR2/src/risk_manager.py /mnt/c/Dev/IFR2/src/screener.py /mnt/c/Dev/IFR2/src/universe_registry.py /mnt/c/Dev/IFR2/config/__init__.py /mnt/c/Dev/IFR2/config/settings.py /mnt/c/Dev/IFR2/scripts/refresh_universes.py</td>
+              <td><pre>/mnt/c/Dev/IFR2/ifr2_app.py:1:80: E501 line too long (89 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:14:1: F401 &#x27;src.risk_manager.calculate_position_size&#x27; imported but unused
+/mnt/c/Dev/IFR2/ifr2_app.py:14:1: F401 &#x27;src.risk_manager.calculate_stop_loss&#x27; imported but unused
+/mnt/c/Dev/IFR2/ifr2_app.py:14:1: F401 &#x27;src.risk_manager.calculate_take_profit&#x27; imported but unused
+/mnt/c/Dev/IFR2/ifr2_app.py:14:1: F401 &#x27;src.risk_manager.calculate_risk_reward&#x27; imported but unused
+/mnt/c/Dev/IFR2/ifr2_app.py:59:1: E302 expected 2 blank lines, found 1
+/mnt/c/Dev/IFR2/ifr2_app.py:64:1: E302 expected 2 blank lines, found 1
+/mnt/c/Dev/IFR2/ifr2_app.py:65:80: E501 line too long (86 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:69:1: E305 expected 2 blank lines after class or function definition, found 1
+/mnt/c/Dev/IFR2/ifr2_app.py:83:80: E501 line too long (83 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:90:80: E501 line too long (113 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:102:80: E501 line too long (92 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:107:80: E501 line too long (83 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:114:80: E501 line too long (113 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:120:80: E501 line too long (92 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:153:80: E501 line too long (102 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:161:80: E501 line too long (81 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:184:80: E501 line too long (86 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:186:80: E501 line too long (95 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:205:80: E501 line too long (87 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:237:80: E501 line too long (83 &gt; 79 characters)
+/mnt/c/Dev/IFR2/ifr2_app.py:241:80: E501 line too long (83 &gt; 79 characters)
+/mnt/c/Dev/IFR
+...&lt;truncado&gt;...</pre></td>
+            </tr>
+            
+            <tr>
+              <td>black</td>
+              <td><span class='badge crit'>FAIL</span></td>
+              <td>1</td>
+              <td>/mnt/c/Dev/IFR2/venv/bin/python -m black --check /mnt/c/Dev/IFR2/ifr2_app.py /mnt/c/Dev/IFR2/smoke_test.py /mnt/c/Dev/IFR2/integration_test.py /mnt/c/Dev/IFR2/src/__init__.py /mnt/c/Dev/IFR2/src/backtester.py /mnt/c/Dev/IFR2/src/data_fetcher.py /mnt/c/Dev/IFR2/src/indicators.py /mnt/c/Dev/IFR2/src/risk_manager.py /mnt/c/Dev/IFR2/src/screener.py /mnt/c/Dev/IFR2/src/universe_registry.py /mnt/c/Dev/IFR2/config/__init__.py /mnt/c/Dev/IFR2/config/settings.py /mnt/c/Dev/IFR2/scripts/refresh_universes.py</td>
+              <td><pre>would reformat /mnt/c/Dev/IFR2/ifr2_app.py
+
+Oh no! 💥 💔 💥
+1 file would be reformatted, 12 files would be left unchanged.</pre></td>
+            </tr>
+            
+        </tbody>
+      </table>
+    </div>
+
+    <div class='two-col'>
+      <div class='section'>
+        <h2>Métricas rápidas</h2>
+        <table>
+          <tbody>
+            <tr><td>Funções longas</td><td>5</td></tr>
+            <tr><td>Arquivos longos</td><td>3</td></tr>
+            <tr><td>TODO/FIXME/HACK</td><td>0</td></tr>
+            <tr><td>Prints no runtime</td><td>4</td></tr>
+            <tr><td>Erros de sintaxe</td><td>0</td></tr>
+            <tr><td>Testes formais</td><td>presentes</td></tr>
+            <tr><td>Arquivos com teste / smoke</td><td>2</td></tr>
+            <tr><td>Git não commitado</td><td>-1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class='section'>
+        <h2>Regressões</h2>
+        <p class='muted'>Nenhuma regressão detectada.</p>
+      </div>
+    </div>
+
+    <div class='two-col'>
+      <div class='section'>
+        <h2>Arquivos grandes</h2>
+        <ul><li>src/universe_registry.py — 397 linhas</li><li>ifr2_app.py — 316 linhas</li><li>scripts/refresh_universes.py — 315 linhas</li></ul>
+      </div>
+      <div class='section'>
+        <h2>Funções grandes</h2>
+        <ul><li>src/backtester.py:run_backtest — 68 linhas (linha 6)</li><li>integration_test.py:main — 65 linhas (linha 8)</li><li>src/universe_registry.py:_normalize_loaded_frame — 56 linhas (linha 198)</li><li>scripts/refresh_universes.py:_refresh_one — 55 linhas (linha 193)</li><li>smoke_test.py:main — 54 linhas (linha 10)</li></ul>
+      </div>
+    </div>
+
+    <div class='two-col'>
+      <div class='section'>
+        <h2>Erros de sintaxe</h2>
+        <p class='muted'>Nenhum erro de sintaxe detectado.</p>
+      </div>
+      <div class='section'>
+        <h2>Arquivos mais longos</h2>
+        <ol><li>src/universe_registry.py — 397 linhas</li><li>ifr2_app.py — 316 linhas</li><li>scripts/refresh_universes.py — 315 linhas</li><li>src/data_fetcher.py — 90 linhas</li><li>src/risk_manager.py — 77 linhas</li><li>integration_test.py — 76 linhas</li><li>config/settings.py — 75 linhas</li><li>src/backtester.py — 73 linhas</li><li>smoke_test.py — 67 linhas</li><li>src/screener.py — 51 linhas</li></ol>
+      </div>
+    </div>
+
+    <div class='section'>
+      <h2>Próximos passos</h2>
+      <ul>
+        <li>Corrigir qualquer check crítico antes de fechar a fase.</li>
+        <li>Eliminar regressões novas antes de avançar para a próxima etapa.</li>
+        <li>Tratar dívida técnica apontada como importante o quanto antes.</li>
+      </ul>
+    </div>
+
+    <p class='footer'>Relatório salvo em: /mnt/c/Dev/IFR2/auditoria/guardian/status-20260519-231321-fase-manual.html | Último estado: /mnt/c/Dev/IFR2/auditoria/guardian/last-state.json</p>
+  </div>
+</body>
+</html>

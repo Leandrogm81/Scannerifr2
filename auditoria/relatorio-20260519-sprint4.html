@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatório de Auditoria - IFR2 - Sprint 04</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:#0d1117; color:#c9d1d9; margin:0; padding:20px; }
+    .container { max-width:1000px; margin:0 auto; background:#161b22; border:1px solid #30363d; border-radius:8px; padding:24px; }
+    h1,h2,h3 { color:#58a6ff; }
+    h1 { margin-top:0; border-bottom:1px solid #30363d; padding-bottom:10px; }
+    .meta { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin:16px 0 24px; }
+    .card { background:#21262d; border:1px solid #30363d; border-radius:6px; padding:12px; }
+    .label { color:#8b949e; font-size:12px; text-transform:uppercase; letter-spacing:.4px; }
+    .value { color:#f0f6fc; font-weight:600; margin-top:4px; }
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-weight:700; }
+    .ok { background:#238636; color:#fff; }
+    .warn { background:#d29922; color:#111; }
+    .crit { background:#da3633; color:#fff; }
+    .section { margin-top:18px; }
+    .finding { background:#21262d; border-left:4px solid #30363d; border-radius:4px; padding:12px; margin:10px 0; }
+    .finding.importante { border-left-color:#d29922; }
+    .finding.sugestao { border-left-color:#8b949e; }
+    ul { margin-top:8px; }
+    code { background:#0d1117; border:1px solid #30363d; border-radius:4px; padding:1px 4px; }
+    .footer { margin-top:24px; border-top:1px solid #30363d; padding-top:12px; color:#8b949e; font-size:13px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Relatório de Auditoria Visual - Sprint 04</h1>
+
+    <div class="meta">
+      <div class="card"><div class="label">Projeto</div><div class="value">IFR2 Miner & Screener</div></div>
+      <div class="card"><div class="label">Fase</div><div class="value">Sprint 04 — Testes, benchmark e documentação</div></div>
+      <div class="card"><div class="label">Data/Hora</div><div class="value">2026-05-19 23:58:01 (-03)</div></div>
+      <div class="card"><div class="label">Score Guardian</div><div class="value"><span class="badge warn">81 / 100</span></div></div>
+      <div class="card"><div class="label">Status do Gate</div><div class="value"><span class="badge warn">ATENÇÃO (sem críticos)</span></div></div>
+    </div>
+
+    <div class="section">
+      <h2>Resumo Executivo</h2>
+      <p>
+        A entrega do Sprint 04 está <strong>funcionando</strong> e passou nos testes formais.
+        Não há bloqueio crítico de segurança ou execução. O projeto pode avançar.
+      </p>
+      <p>
+        O ponto de atenção é <strong>performance em escala total</strong>: no benchmark com 600 ativos,
+        o tempo foi de 345,75 segundos, com 15 falhas de download em fonte externa.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>O que passou</h2>
+      <ul>
+        <li><span class="badge ok">pytest</span> 15 testes passando (100%).</li>
+        <li><span class="badge ok">flake8</span> sem erros no padrão configurado do projeto.</li>
+        <li><span class="badge ok">black</span> formatação validada.</li>
+        <li><span class="badge ok">smoke/integration</span> scripts de verificação operacionais.</li>
+        <li>Universo B3 atualizado com sufixo <code>.SA</code> para compatibilidade com Yahoo Finance.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Achados da auditoria</h2>
+
+      <div class="finding importante">
+        <h3>IMPORTANTE — Lentidão no benchmark completo</h3>
+        <p><strong>Impacto:</strong> experiência mais lenta quando roda universo completo (B3 + EUA).</p>
+        <p><strong>Evidência:</strong> 600 ativos, 585 sucesso, 15 falhas, 345,75s, 1,74 ativos/s.</p>
+        <p><strong>Sugestão:</strong> criar modo "Rápido" (janela menor) e manter modo "Completo" sob demanda.</p>
+      </div>
+
+      <div class="finding importante">
+        <h3>IMPORTANTE — Arquivos grandes aumentam custo de manutenção</h3>
+        <p><strong>Impacto:</strong> revisão mais difícil e maior risco de regressão em mudanças futuras.</p>
+        <p><strong>Evidência:</strong> <code>ifr2_app.py</code> (425 linhas), <code>src/universe_registry.py</code> (397), <code>scripts/refresh_universes.py</code> (324).</p>
+        <p><strong>Sugestão:</strong> quebrar em submódulos por responsabilidade.</p>
+      </div>
+
+      <div class="finding sugestao">
+        <h3>SUGESTÃO — Captura ampla de exceções</h3>
+        <p>Há <code>except Exception</code> em pontos de suporte/validação. Não bloqueia a entrega, mas vale melhorar o diagnóstico com logs mais detalhados.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Próximos passos priorizados</h2>
+      <ol>
+        <li>Implementar preset de execução no app: <strong>Rápido</strong> vs <strong>Completo</strong>.</li>
+        <li>Extrair partes extensas de <code>ifr2_app.py</code> para módulos de UI/helpers.</li>
+        <li>Adicionar teste de regressão de benchmark com amostra reduzida (30-50 ativos).</li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      Relatório gerado para fechamento do Sprint 04 (modo GATE + RELATÓRIO). Sem críticos; avanço permitido com plano de melhoria de performance.
+    </div>
+  </div>
+</body>
+</html>

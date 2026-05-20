@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual de Uso Completo - IFR2 Miner & Screener</title>
+  <style>
+    body { margin:0; background:#0d1117; color:#c9d1d9; font-family:Arial, Helvetica, sans-serif; }
+    .container { max-width:1100px; margin:24px auto; background:#161b22; border:1px solid #30363d; border-radius:8px; padding:24px; }
+    h1,h2,h3 { color:#58a6ff; }
+    h1 { margin-top:0; border-bottom:1px solid #30363d; padding-bottom:10px; }
+    .meta { background:#21262d; border:1px solid #30363d; border-radius:6px; padding:12px; margin-bottom:16px; }
+    .toc { background:#0f1520; border:1px solid #30363d; border-radius:6px; padding:12px; margin:16px 0; }
+    .toc a { color:#79c0ff; text-decoration:none; }
+    .toc li { margin:6px 0; }
+    code, pre { font-family:Consolas, Monaco, monospace; }
+    pre { background:#0b111b; border:1px solid #30363d; border-radius:6px; padding:12px; overflow:auto; }
+    .note { border-left:4px solid #d29922; background:#2b2111; padding:10px; border-radius:4px; }
+    .ok { border-left:4px solid #2ea043; background:#122417; padding:10px; border-radius:4px; }
+    table { border-collapse:collapse; width:100%; margin:8px 0 16px; }
+    th,td { border:1px solid #30363d; padding:8px; text-align:left; }
+    th { background:#21262d; }
+    .footer { margin-top:20px; padding-top:12px; border-top:1px solid #30363d; color:#8b949e; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Manual de Uso Completo — IFR2 Miner & Screener</h1>
+
+    <div class="meta">
+      <div><strong>Versão do manual:</strong> 1.0</div>
+      <div><strong>Gerado em:</strong> 2026-05-20 00:07:16 -03</div>
+      <div><strong>Projeto:</strong> /mnt/c/Dev/IFR2</div>
+    </div>
+
+    <div class="toc">
+      <strong>Sumário</strong>
+      <ol>
+        <li><a href="#sec1">O que é este app</a></li>
+        <li><a href="#sec2">Aviso importante</a></li>
+        <li><a href="#sec3">Requisitos</a></li>
+        <li><a href="#sec4">Instalação e execução</a></li>
+        <li><a href="#sec5">Estrutura funcional</a></li>
+        <li><a href="#sec6">Regras da estratégia</a></li>
+        <li><a href="#sec7">Uso da interface (passo a passo)</a></li>
+        <li><a href="#sec8">Universos e snapshots</a></li>
+        <li><a href="#sec9">Atualizar universos</a></li>
+        <li><a href="#sec10">Testes e qualidade</a></li>
+        <li><a href="#sec11">Benchmark</a></li>
+        <li><a href="#sec12">Troubleshooting</a></li>
+        <li><a href="#sec13">Boas práticas</a></li>
+        <li><a href="#sec14">Comandos rápidos</a></li>
+      </ol>
+    </div>
+
+    <h2 id="sec1">1) O que é este app</h2>
+    <p>Aplicação Streamlit para análise quantitativa de ações com dois fluxos principais:</p>
+    <ul>
+      <li><strong>Screener Diário:</strong> identifica ativos em possível região de compra (IFR2 + tendência + liquidez).</li>
+      <li><strong>O Garimpo (Mining):</strong> roda backtest em lote e gera ranking de desempenho vs buy & hold.</li>
+    </ul>
+    <p>Mercados suportados: B3, NYSE/NASDAQ e modo combinado.</p>
+
+    <h2 id="sec2">2) Aviso importante</h2>
+    <div class="note">Ferramenta de análise. Não executa ordens de compra/venda. Retorno passado não garante retorno futuro.</div>
+
+    <h2 id="sec3">3) Requisitos</h2>
+    <ul>
+      <li>Python 3.12+</li>
+      <li>Ambiente virtual (venv) recomendado</li>
+      <li>Dependências instaladas via requirements.txt</li>
+      <li>Internet para downloads via yfinance</li>
+    </ul>
+
+    <h2 id="sec4">4) Instalação e execução</h2>
+    <pre><code>cd /mnt/c/Dev/IFR2
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+./venv/bin/streamlit run ifr2_app.py \
+  --server.address 0.0.0.0 \
+  --server.port 8501 \
+  --server.headless true \
+  --browser.gatherUsageStats false \
+  --server.fileWatcherType none</code></pre>
+    <p>Acesse em: <code>http://localhost:8501</code></p>
+
+    <h2 id="sec5">5) Estrutura funcional</h2>
+    <table>
+      <thead><tr><th>Arquivo</th><th>Responsabilidade</th></tr></thead>
+      <tbody>
+        <tr><td>ifr2_app.py</td><td>Interface Streamlit</td></tr>
+        <tr><td>src/universe_registry.py</td><td>Universos/snapshots de ativos</td></tr>
+        <tr><td>src/data_fetcher.py</td><td>Download em lote/paralelo</td></tr>
+        <tr><td>src/indicators.py</td><td>Cálculo de IFR2, SMA200 e volume financeiro</td></tr>
+        <tr><td>src/screener.py</td><td>Lógica de sinal do screener</td></tr>
+        <tr><td>src/backtester.py</td><td>Lógica de backtest e métricas</td></tr>
+        <tr><td>src/risk_manager.py</td><td>Funções auxiliares de risco</td></tr>
+        <tr><td>config/settings.py</td><td>Constantes e defaults</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="sec6">6) Regras da estratégia</h2>
+    <h3>6.1 Indicadores</h3>
+    <ul>
+      <li>IFR2 (RSI 2 períodos)</li>
+      <li>SMA200</li>
+      <li>Bullish = Close &gt; SMA200</li>
+      <li>Vol_Fin = Close * Volume</li>
+      <li>Vol_Fin_Medio = média de 21 períodos</li>
+      <li>Max_Prev = máxima anterior (shift)</li>
+    </ul>
+    <p>Obs.: com menos de 200 candles, o cálculo estratégico não é válido.</p>
+
+    <h3>6.2 Regra do Screener</h3>
+    <ul>
+      <li>IFR2 &lt; threshold</li>
+      <li>Preço acima da SMA200 (Bullish)</li>
+      <li>Volume financeiro médio acima do mínimo</li>
+    </ul>
+
+    <h3>6.3 Regra do Backtest</h3>
+    <p><strong>Entrada:</strong> IFR2 &lt; threshold e Bullish.</p>
+    <p><strong>Saída:</strong> IFR2 &gt; 70 ou Close &gt; Max_Prev.</p>
+
+    <h2 id="sec7">7) Uso da interface (passo a passo)</h2>
+    <h3>7.1 Sidebar</h3>
+    <ol>
+      <li>Escolha mercado: B3, NYSE/NASDAQ ou Ambos.</li>
+      <li>Escolha cesta (snapshot, legado ou customizada).</li>
+      <li>Refine ativos no multiselect.</li>
+      <li>Defina threshold IFR2, liquidez e período histórico.</li>
+    </ol>
+
+    <h3>7.2 Aba "Screener Diário"</h3>
+    <ol>
+      <li>Clique em <strong>Executar Varredura</strong>.</li>
+      <li>Veja barra de progresso de download.</li>
+      <li>Analise tabela com colunas: Ticker, Preço, Moeda, Mercado, IFR2, Acima SMA200, Vol Fin Médio e Sinal.</li>
+    </ol>
+
+    <h3>7.3 Aba "O Garimpo (Mining)"</h3>
+    <ol>
+      <li>Clique em <strong>Iniciar Mineração</strong>.</li>
+      <li>O app roda backtest por ativo.</li>
+      <li>Veja ranking por Alpha e curvas de capital Top 5.</li>
+    </ol>
+
+    <h2 id="sec8">8) Universos e snapshots</h2>
+    <ul>
+      <li>Canônicos:
+        <ul>
+          <li><code>data/universes/b3_top100.csv</code></li>
+          <li><code>data/universes/us_top500.csv</code></li>
+        </ul>
+      </li>
+      <li>Histórico versionado em <code>data/universes/history/</code></li>
+    </ul>
+
+    <h2 id="sec9">9) Atualizar universos</h2>
+    <pre><code>PYTHONPATH=. ./venv/bin/python scripts/refresh_universes.py --dry-run
+PYTHONPATH=. ./venv/bin/python scripts/refresh_universes.py</code></pre>
+    <p>Parâmetros: <code>--b3-source</code>, <code>--us-source</code>, <code>--us-fallback-source</code>, <code>--project-root</code>.</p>
+    <div class="ok">Importante: tickers B3 são normalizados para formato <code>.SA</code> para o Yahoo Finance.</div>
+
+    <h2 id="sec10">10) Testes e qualidade</h2>
+    <pre><code>PYTHONPATH=. ./venv/bin/pytest -q
+./venv/bin/python smoke_test.py
+./venv/bin/python integration_test.py
+./venv/bin/python -m flake8 ifr2_app.py smoke_test.py integration_test.py src/ config/ scripts/ tests/
+./venv/bin/python -m black ifr2_app.py smoke_test.py integration_test.py src/ config/ scripts/ tests/
+./venv/bin/python auditoria/guardian/guardian.py</code></pre>
+
+    <h2 id="sec11">11) Benchmark</h2>
+    <pre><code>PYTHONPATH=. ./venv/bin/python benchmark_scale.py</code></pre>
+    <p>Relatório salvo em: <code>benchmark_report.md</code></p>
+
+    <h2 id="sec12">12) Troubleshooting</h2>
+    <h3>App não abre</h3>
+    <pre><code>ss -ltnp | grep :8501 || true</code></pre>
+
+    <h3>Falhas de download</h3>
+    <ul>
+      <li>Reduza a quantidade de ativos no multiselect.</li>
+      <li>Use período menor (ex.: 1y).</li>
+      <li>Atualize snapshots e tente novamente.</li>
+    </ul>
+
+    <h3>Ativo B3 sem dados</h3>
+    <p>Use ticker com sufixo <code>.SA</code> (ex.: PETR4.SA).</p>
+
+    <h3>Sem sinais no screener</h3>
+    <p>Pode ser normal dependendo dos filtros (IFR2, tendência e liquidez).</p>
+
+    <h2 id="sec13">13) Boas práticas</h2>
+    <ol>
+      <li>Atualize universos antes de rodar em escala.</li>
+      <li>Valide em subset pequeno antes de universo completo.</li>
+      <li>Guarde benchmark e auditoria como evidência.</li>
+      <li>Rode pytest antes de fechar fase/sprint.</li>
+    </ol>
+
+    <h2 id="sec14">14) Comandos rápidos</h2>
+    <pre><code># Subir app
+cd /mnt/c/Dev/IFR2
+source venv/bin/activate
+./venv/bin/streamlit run ifr2_app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true --browser.gatherUsageStats false --server.fileWatcherType none
+
+# Atualizar universos
+PYTHONPATH=. ./venv/bin/python scripts/refresh_universes.py
+
+# Validação completa
+PYTHONPATH=. ./venv/bin/pytest -q
+./venv/bin/python -m flake8 ifr2_app.py smoke_test.py integration_test.py src/ config/ scripts/ tests/
+./venv/bin/python -m black --check ifr2_app.py smoke_test.py integration_test.py src/ config/ scripts/ tests/
+./venv/bin/python auditoria/guardian/guardian.py</code></pre>
+
+    <div class="footer">
+      Manual baseado no estado atual do código em /mnt/c/Dev/IFR2 (Streamlit + módulos src).
+    </div>
+  </div>
+</body>
+</html>
