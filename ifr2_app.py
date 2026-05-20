@@ -11,6 +11,8 @@ from src.data_fetcher import fetch_all_data
 from src.indicators import calc_indicators
 from src.backtester import run_backtest
 from src.screener import screen_tickers
+from src.fundamental import get_fundamental_data, classify_fundamental_health
+from src.advisor import run_ai_advice, load_advisor_config
 from config.settings import (
     DEFAULT_IBOV,
     DEFAULT_SMLL,
@@ -52,6 +54,25 @@ st.markdown(
 @st.cache_data(ttl=3600)
 def get_universe_cached(code: str):
     return load_universe(code)
+
+
+@st.cache_data(ttl=21600)
+def get_fundamental_cached(ticker: str):
+    return get_fundamental_data(ticker)
+
+
+def _format_money_compact(value: float | None, currency: str) -> str:
+    if value is None:
+        return "N/A"
+
+    symbol = "R$" if currency == "BRL" else "US$"
+    abs_val = abs(value)
+
+    if abs_val >= 1_000_000_000:
+        return f"{symbol} {value/1_000_000_000:.2f}B"
+    if abs_val >= 1_000_000:
+        return f"{symbol} {value/1_000_000:.2f}M"
+    return f"{symbol} {value:,.0f}"
 
 
 # Sidebar com opções
@@ -201,6 +222,10 @@ period_backtest = st.sidebar.selectbox(
     "Período Histórico (Dados)", ["1y", "2y", "3y", "5y"], index=1
 )
 
+only_profitable = st.sidebar.checkbox(
+    "Somente empresas lucrativas (filtro fundamentalista)", value=False
+)
+
 # Tabs para screening e backtesting
 tab1, tab2 = st.tabs(["📊 Screener Diário", "📈 O Garimpo (Mining)"])
 
@@ -253,6 +278,56 @@ with tab1:
         if results:
             res_df = pd.DataFrame(results)
 
+            # Anexar leitura fundamentalista nos ativos qualificados
+            fundamentals_by_ticker = {}
+            for ticker in res_df["Ticker"].tolist():
+                f_data = get_fundamental_cached(ticker)
+                fundamentals_by_ticker[ticker] = f_data
+
+            res_df["Selo Fund."] = "N/A"
+            res_df["Score Fund."] = None
+            res_df["P/L"] = None
+            res_df["DY %"] = None
+            res_df["Lucro Líq. 12m"] = "N/A"
+
+            for idx, row in res_df.iterrows():
+                ticker = row["Ticker"]
+                f_data = fundamentals_by_ticker.get(ticker)
+                if f_data is None:
+                    continue
+
+                seal = classify_fundamental_health(f_data)
+                res_df.at[idx, "Selo Fund."] = f"{seal.emoji} {seal.label}"
+                res_df.at[idx, "Score Fund."] = seal.score
+                res_df.at[idx, "P/L"] = (
+                    round(f_data.trailing_pe, 2)
+                    if f_data.trailing_pe is not None
+                    else None
+                )
+                res_df.at[idx, "DY %"] = (
+                    round(f_data.dividend_yield_pct, 2)
+                    if f_data.dividend_yield_pct is not None
+                    else None
+                )
+                res_df.at[idx, "Lucro Líq. 12m"] = _format_money_compact(
+                    f_data.net_income, f_data.currency
+                )
+
+            if only_profitable:
+                before = len(res_df)
+                res_df = res_df[
+                    res_df["Ticker"].map(
+                        lambda t: (
+                            fundamentals_by_ticker.get(t) is not None
+                            and fundamentals_by_ticker[t].net_income is not None
+                            and fundamentals_by_ticker[t].net_income > 0
+                        )
+                    )
+                ].copy()
+                st.info(
+                    f"Filtro lucrativas ativo: {before} -> {len(res_df)} ativos visíveis."
+                )
+
             def highlight_signal(val):
                 return "color: #00FF00; font-weight: bold" if val == "COMPRA!" else ""
 
@@ -267,6 +342,66 @@ with tab1:
                 res_df.style.map(highlight_signal, subset=["Sinal"]),
                 use_container_width=True,
             )
+
+            # Conselheiro IA (on demand)
+            st.subheader("🧠 Conselheiro IA")
+            advisor_cfg = load_advisor_config()
+
+            if not advisor_cfg.api_key:
+                st.info(
+                    "Configure OPENROUTER_API_KEY em st.secrets para habilitar a análise com IA."
+                )
+            elif len(res_df) == 0:
+                st.info("Sem ativos para analisar após os filtros atuais.")
+            else:
+                selected_for_ai = st.selectbox(
+                    "Escolha um ativo para análise comentada",
+                    res_df["Ticker"].tolist(),
+                    key="ai_ticker_select_tab1",
+                )
+
+                if st.button("Analisar com IA", key="ai_analyze_btn_tab1"):
+                    row = res_df[res_df["Ticker"] == selected_for_ai].iloc[0].to_dict()
+                    f_data = fundamentals_by_ticker.get(selected_for_ai)
+                    seal = (
+                        classify_fundamental_health(f_data)
+                        if f_data is not None
+                        else None
+                    )
+
+                    payload = {
+                        "ativo": selected_for_ai,
+                        "mercado": row.get("Mercado"),
+                        "moeda": row.get("Moeda"),
+                        "sinal": row.get("Sinal"),
+                        "ifr2": row.get("IFR2"),
+                        "acima_sma200": row.get("Acima SMA200"),
+                        "vol_fin_medio": row.get("Vol Fin Médio"),
+                        "fundamentos": {
+                            "pl": None if f_data is None else f_data.trailing_pe,
+                            "dy_pct": (
+                                None if f_data is None else f_data.dividend_yield_pct
+                            ),
+                            "lucro_liquido": (
+                                None if f_data is None else f_data.net_income
+                            ),
+                            "divida_patrimonio": (
+                                None if f_data is None else f_data.debt_to_equity
+                            ),
+                            "roe_pct": None if f_data is None else f_data.roe_pct,
+                            "selo": None if seal is None else seal.label,
+                            "score": None if seal is None else seal.score,
+                        },
+                    }
+
+                    with st.spinner("Consultando o conselheiro IA..."):
+                        ok, response = run_ai_advice(payload)
+
+                    if ok:
+                        st.success("Análise da IA pronta")
+                        st.write(response)
+                    else:
+                        st.error(response)
         else:
             msg = "Nenhum resultado encontrado que atenda aos critérios."
             if errors_count > 0:
